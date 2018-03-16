@@ -68,7 +68,7 @@ Ostali podaci:
 
 Izvještaj o praćenju se dostavlja lično kao i sva ostala roba.
 
-**Izrađivanje lažnih dokumenata**
+**Podnošenje zahtjeva za izradu lažnih dokumenata**
 
 Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove podatke koji će biti na dokumentu. A to su sljedeći podaci:
 
@@ -81,7 +81,14 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
  - Prebivalište
  - Slika
  
- Dostava dokumenata se vrši kao i dostava ostale robe.
+ **Izrada lažnih dokumenata**
+ 
+ Falsifikator na osnovu novih podataka koje je klijent poslao, popunjava blank formu lične, vozačke ili pasoša i šalje na izradu. Dostava dokumenata se vrši kao i dostava ostale robe.
+ 
+ **Mapa klijenata, dostavljača i dobavljača**
+ 
+ Uprava posjeduje informacije o trenutnim lokacijama svih klijenata, dobavljača i dostavljača i na taj način u svakom trenutku ima potpunu kontrolu nad zaposlenicima i klijentima u mafiji. Uprava šalje podatke o lokaciji dužnika utjerivaču dugova kako bi ovaj otišao i na "nježan" način obavio ono za šta je zadužen.
+ 
  
  **Unošenje nove robe i brisanje sa spiska dostupne robe**
  
@@ -97,7 +104,7 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
  
  Ukoliko je klijent nešto kupovao onda je obavezan da plati u gotovini dostavljaču prilikom primopredaje robe, u suprotnom ukoliko je njegov zahtjev bio neki falsifikovani dokument ili iznajmljivanje privatnog detektiva klijent moze da bira izmedju dva nacina placanja, gotovinom ili transakcijom novca sa računa klijenta. Dostavljač posjeduje čitač kartica i na taj način on prvo izvrši prebacivanje novca na glavni račun mafije koji se nalazi na Kajmanskim otocima. Nakon što je novac prebačen dobavljaš daje robu klijentu.
  
- 
+ **
 
 # Funkcionalnosti
 

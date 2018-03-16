@@ -68,6 +68,21 @@ Ostali podaci:
 
 Izvještaj o praćenju se dostavlja lično kao i sva ostala roba.
 
+**Izrađivanje lažnih dokumenata**
+
+Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove podatke koji će biti na dokumentu. A to su sljedeći podaci:
+
+ - Ime
+ - Prezime
+ - Mjesto rođenja
+ - Datum rođenja
+ - Spol
+ - Državljanstvo
+ - Prebivalište
+ - Slika
+ 
+ Dostava dokumenata se vrši kao i dostava ostale robe.
+
 # Funkcionalnosti
 
 # Akteri

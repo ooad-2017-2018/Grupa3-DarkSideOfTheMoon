@@ -27,6 +27,16 @@ Prilikom registracije potrebno je da klijenti unesu sljedeće podatke:
  
  Neophodno je da klijent posjeduje korisnički račun da bi mogao stupiti u kontakt sa mafijom i koristiti usluge koje oni nude. 
 
+**Kupovina/Prodaja**
+
+Klijent može kupiti sljedeće:
+- Dijamant
+- Nakit
+- Antikvitet
+- Sliku
+
+Nakon što klijent odabere šta želi kupiti, potrebno je da pošalje zahtjev za kupovinu i čeka do 48 sati za odobrenje (ili odbijanje) zahtjeva. Zatim uprava zakazuje vrijeme i mjesto preuzimanja/plaćanja robe (najviše 48 sati od odobrenja transakcije). Plaćanje je isključivo lično i gotovinom dostavljaču. Nakon obavljenje kupovine roba se označava kao prodata.
+Ukoliko klijent želi posebnu vrstu dijamanata ili nakita, onda te artikle može odabrati samo lično prilikom komunikacije sa dostavljaćem, uz prisustvo člana uprave mafije, koji ce odobriti ili odbiti novčanu ponudu za taj predmet.
 
 
 # Funkcionalnosti

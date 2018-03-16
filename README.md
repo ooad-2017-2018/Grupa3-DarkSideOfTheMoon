@@ -123,3 +123,18 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
 
 # Akteri
 
+Klijent - Kupuje robu, unajmljuje detektiva i šalje zahtjev za izradu lažnih dokumenata i naravno najvažnije naplaćuje usluge. 
+
+Uprava - Dodaje novu robu, briše robu, odobrava/odbija zahtjeve.
+
+Dostavljač - Dobija podatke o robi koju treba dostaviti, dostavlja je, naplaćuje i podnosi izvještaj o naplati.  
+
+Dobavljač - Pronalazi robu, podnosi prijedlog za kupovinu, obavlja kupovinu.
+
+Privatni detektiv - Prati, piše izvještaj o praćenju i preko njega se šalje zahtjev za hakovanje hakeru. 
+
+Falsifikator - Osoba koja kreira lažna dokumenta na osnovu zahtjeva klijenta. 
+
+Haker - Radi za detektiva i po njegovom nalogu hakuje ono što je detektivu potrebno za praćenje. 
+
+Utjerivač duga - Osoba koja će se pobrinuti da klijent plati sve ono što je kupio od firme.

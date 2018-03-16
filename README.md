@@ -1,7 +1,8 @@
 # Dark Side Of The Moon
 
 **Tema: Dark web**
-**Članovi Tima**
+
+**Članovi Tima:**
 
 1. Alagić Lamija  
 2. Čogić Adem  
@@ -38,6 +39,34 @@ Klijent može kupiti sljedeće:
 Nakon što klijent odabere šta želi kupiti, potrebno je da pošalje zahtjev za kupovinu i čeka do 48 sati za odobrenje (ili odbijanje) zahtjeva. Zatim uprava zakazuje vrijeme i mjesto preuzimanja/plaćanja robe (najviše 48 sati od odobrenja transakcije). Plaćanje je isključivo lično i gotovinom dostavljaču. Nakon obavljenje kupovine roba se označava kao prodata.
 Ukoliko klijent želi posebnu vrstu dijamanata ili nakita, onda te artikle može odabrati samo lično prilikom komunikacije sa dostavljaćem, uz prisustvo člana uprave mafije, koji ce odobriti ili odbiti novčanu ponudu za taj predmet.
 
+**Iznajmljivanje privatnog detektiva**
+
+Ukoliko klijent želi unajmiti privatnog detektiva potrebno je da unese podatke o osobi koju treba pratiti (u daljem tekstu subjekat).
+
+ Osnovni podaci o subjektu:
+ 
+ - Ime
+ - Prezime
+ - Adresa stanovanja
+ - Srodstvo sa subjektom
+ 
+U slučaju da je subjekat zaposlen:
+
+   - Naziv kompanije
+   - Adresa kompanije
+  
+U slučaju da je klijent u nekoj organizaciji/društvu/sportskom klubu:
+
+  - Naziv organizacije/društva/sportskog kluba 
+  - Adresa organizacije/društva/sportskog kluba
+
+Ostali podaci:
+
+- Slika subjekta 
+- Najbliža rodbina sa kojom bi subjekt mogao biti u kontaktu (brat/sestra/roditelji/rođaci) 
+- Slike rodbine
+
+Izvještaj o praćenju se dostavlja lično kao i sva ostala roba.
 
 # Funkcionalnosti
 

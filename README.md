@@ -103,10 +103,23 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
  **Dostava robe klijentu**
  
  Ukoliko je klijent nešto kupovao onda je obavezan da plati u gotovini dostavljaču prilikom primopredaje robe, u suprotnom ukoliko je njegov zahtjev bio neki falsifikovani dokument ili iznajmljivanje privatnog detektiva klijent moze da bira izmedju dva nacina placanja, gotovinom ili transakcijom novca sa računa klijenta. Dostavljač posjeduje čitač kartica i na taj način on prvo izvrši prebacivanje novca na glavni račun mafije koji se nalazi na Kajmanskim otocima. Nakon što je novac prebačen dobavljaš daje robu klijentu.
- 
- **
 
 # Funkcionalnosti
+
+- Registracija/prijava na aplikaciju
+- Pregled robe 
+- Kupovina robe
+- Online plaćanje
+- Odobravanje zahtjeva (zahtjevi klijenata, dobavljača i članova uprave)
+- Izrada lažnih dokumenata (lična, pasoš i vozačka)
+- Unajmljivanje privatnog detektiva
+- Dodavanje nove robe
+- Brisanje robe
+- Promjena lozinke
+- Izvještaj o stanju robe
+- Mapa klijenata, dostavljača i dobavljača
+- Popunjavanje izvještaja o praćenju 
+
 
 # Akteri
 

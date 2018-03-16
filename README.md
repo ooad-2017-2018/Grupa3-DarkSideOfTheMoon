@@ -88,6 +88,16 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
  Uprava je u mogućnosti da doda novu robu koju klijenti mogu kupiti. Unošenje se vrši jednostavnim odabirom koji u koju kategoriju roba ide, zatim se unese naziv, kratak opis, cijena i slika.
  
  Isto tako postoji mogućnost brisanja robe sa liste dostupne robe za prodaju. Član uprave podnosi zahtjev za brisanje, koji moraju svi članovi uprave da odobre. Uz zahtjev se šalje kratko obrazloženje za podnošenje zahtjeva za brisanje. Roba se briše sa liste dostupne robe nakon odobrenja posljednjeg člana uprave.
+ 
+ **Nabavka nove robe**
+ 
+ Dobavljači robe rade na terenu gdje obilaze antikvitetarnice i traže robu koju bi mafija mogla kupiti a kasnije i preprodati svojim klijentima. Nakon utvrđivanja autentičnosti robe, šalje se zahtjev upravi sa detaljnim podacima o robi i slikom. Uprava treba da većinom odluči da li se isplati kupiti određenu robu. Nakon odobrenja dobavljač treba da donese robu u sjedište mafije.
+ 
+ **Dostava robe klijentu**
+ 
+ Ukoliko je klijent nešto kupovao onda je obavezan da plati u gotovini dostavljaču prilikom primopredaje robe, u suprotnom ukoliko je njegov zahtjev bio neki falsifikovani dokument ili iznajmljivanje privatnog detektiva klijent moze da bira izmedju dva nacina placanja, gotovinom ili transakcijom novca sa računa klijenta. Dostavljač posjeduje čitač kartica i na taj način on prvo izvrši prebacivanje novca na glavni račun mafije koji se nalazi na Kajmanskim otocima. Nakon što je novac prebačen dobavljaš daje robu klijentu.
+ 
+ 
 
 # Funkcionalnosti
 

@@ -82,6 +82,12 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
  - Slika
  
  Dostava dokumenata se vrši kao i dostava ostale robe.
+ 
+ **Unošenje nove robe i brisanje sa spiska dostupne robe**
+ 
+ Uprava je u mogućnosti da doda novu robu koju klijenti mogu kupiti. Unošenje se vrši jednostavnim odabirom koji u koju kategoriju roba ide, zatim se unese naziv, kratak opis, cijena i slika.
+ 
+ Isto tako postoji mogućnost brisanja robe sa liste dostupne robe za prodaju. Član uprave podnosi zahtjev za brisanje, koji moraju svi članovi uprave da odobre. Uz zahtjev se šalje kratko obrazloženje za podnošenje zahtjeva za brisanje. Roba se briše sa liste dostupne robe nakon odobrenja posljednjeg člana uprave.
 
 # Funkcionalnosti
 

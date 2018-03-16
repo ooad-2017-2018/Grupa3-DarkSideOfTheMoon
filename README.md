@@ -115,16 +115,17 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
 - Registracija/prijava na aplikaciju
 - Pregled robe 
 - Kupovina robe
-- Online plaćanje
 - Odobravanje zahtjeva (zahtjevi klijenata, dobavljača i članova uprave)
 - Izrada lažnih dokumenata (lična, pasoš i vozačka)
 - Unajmljivanje privatnog detektiva
+- Podnošenje zahtjeva za izradu lažnih dokumenata
 - Dodavanje nove robe
 - Brisanje robe
 - Promjena lozinke
 - Izvještaj o stanju robe
 - Mapa klijenata, dostavljača i dobavljača
-- Popunjavanje izvještaja o praćenju 
+- Popunjavanje izvještaja (dostavljač, utjerivač duga, dobavljač, haker i detektiv)
+- Podnošenje zahteva za hakiranje
 
 
 # Akteri

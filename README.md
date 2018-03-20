@@ -43,7 +43,7 @@ Prilikom registracije potrebno je da klijenti unesu sljedeće podatke:
  - Password 
  - Korisničko ime
  
- Neophodno je da klijent posjeduje korisnički račun da bi mogao stupiti u kontakt sa mafijom i koristiti usluge koje oni nude. 
+ Neophodno je da klijent posjeduje korisnički račun da bi mogao pristupiti stranici mafije i koristiti usluge koje oni nude. 
 
 **Kupovina/Prodaja**
 

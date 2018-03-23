@@ -53,7 +53,7 @@ Klijent može kupiti sljedeće:
 - Antikvitet
 - Sliku
 
-Nakon što klijent odabere šta želi kupiti, potrebno je da pošalje zahtjev za kupovinu i čeka za odobrenje (ili odbijanje) zahtjeva. Zatim uprava zakazuje vrijeme i mjesto preuzimanja/plaćanja robe. Plaćanje je isključivo lično dostavljaču. Nakon obavljenje kupovine roba se označava kao prodata.
+Nakon što klijent odabere šta želi kupiti, dostavljač dobija informaciju gdje treba dostaviti robu koju je klijent naručio. Plaćanje je isključivo lično dostavljaču. Nakon obavljenje kupovine roba se označava kao prodata.
 Ukoliko klijent želi posebnu vrstu dijamanata ili nakita, onda te artikle može odabrati samo lično prilikom komunikacije sa dostavljačem, uz prisustvo člana uprave mafije, koji će odobriti ili odbiti novčanu ponudu za taj predmet.
 
 **Iznajmljivanje privatnog detektiva**
@@ -80,12 +80,10 @@ U slučaju da je klijent u nekoj organizaciji/društvu/sportskom klubu:
 Ostali podaci:
 
 - Slika subjekta 
-- Najbliža rodbina sa kojom bi subjekt mogao biti u kontaktu (brat/sestra/roditelji/rođaci/supruga/vjerenica/djevojka) 
-- Slike rodbine
 
 **Podnošenje zahtjeva za izradu lažnih dokumenata**
 
-Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove podatke koji će biti na dokumentu. A to su sljedeći podaci:
+Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da odabere koji dokument želi, lična, vozačka ili pasoš a zatim da unese nove podatke koji će biti na dokumentu. A to su sljedeći podaci:
 
  - Ime
  - Prezime
@@ -116,14 +114,14 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
  
  **Dostava robe klijentu**
  
- Ukoliko je klijent nešto kupovao onda je obavezan da plati u gotovini dostavljaču prilikom primopredaje robe, u suprotnom ukoliko je njegov zahtjev bio neki falsifikovani dokument ili iznajmljivanje privatnog detektiva klijent moze da bira izmedju dva nacina placanja, gotovinom ili transakcijom novca sa računa klijenta. Dostavljač posjeduje čitač kartica i na taj način on prvo izvrši prebacivanje novca na glavni račun mafije koji se nalazi na Kajmanskim otocima, a nakon što je novac prebačen dobavljač daje robu klijentu.
+ Ukoliko je klijent nešto kupovao onda je obavezan da plati u gotovini dostavljaču prilikom primopredaje robe, u suprotnom ukoliko je njegov zahtjev bio neki falsifikovani dokument ili iznajmljivanje privatnog detektiva klijent može da bira između dva načina plaćanja, gotovinom ili transakcijom novca sa računa klijenta. Dostavljač posjeduje čitač kartica i na taj način on prvo izvrši prebacivanje novca na glavni račun mafije koji se nalazi na Kajmanskim otocima, a nakon što je novac prebačen dobavljač daje robu klijentu.
 
 # Funkcionalnosti
 
 - Registracija/prijava na aplikaciju
 - Pregled robe 
 - Kupovina robe
-- Odobravanje zahtjeva (zahtjevi klijenata, dobavljača i članova uprave)
+- Odobravanje zahtjeva (zahtjevi dobavljača i članova uprave)
 - Izrada lažnih dokumenata (lična, pasoš i vozačka)
 - Unajmljivanje privatnog detektiva
 - Podnošenje zahtjeva za izradu lažnih dokumenata
@@ -138,18 +136,18 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da unese nove poda
 
 # Akteri
 
-Klijent - Kupuje robu, unajmljuje detektiva i šalje zahtjev za izradu lažnih dokumenata i naravno najvažnije naplaćuje usluge. 
+**Klijent** - Kupuje robu, unajmljuje detektiva i šalje zahtjev za izradu lažnih dokumenata i naravno najvažnije naplaćuje usluge. 
 
-Uprava - Dodaje novu robu, briše robu, odobrava/odbija zahtjeve.
+**Uprava** - Dodaje novu robu, briše robu, odobrava/odbija zahtjeve.
 
-Dostavljač - Dobija podatke o robi koju treba dostaviti, dostavlja je, naplaćuje i podnosi izvještaj o naplati.  
+**Dostavljač** - Dobija podatke o robi koju treba dostaviti, dostavlja je, naplaćuje i podnosi izvještaj o naplati.  
 
-Dobavljač - Pronalazi robu, podnosi prijedlog za kupovinu, obavlja kupovinu.
+**Dobavljač** - Pronalazi robu, podnosi prijedlog za kupovinu, obavlja kupovinu.
 
-Privatni detektiv - Prati, piše izvještaj o praćenju i preko njega se šalje zahtjev za hakovanje hakeru. 
+**Privatni detektiv** - Prati, piše izvještaj o praćenju i preko njega se šalje zahtjev za hakovanje hakeru. 
 
-Falsifikator - Osoba koja kreira lažna dokumenta na osnovu zahtjeva klijenta. 
+**Falsifikator** - Osoba koja kreira lažna dokumenta na osnovu zahtjeva klijenta. 
 
-Haker - Radi za detektiva i po njegovom nalogu hakuje ono što je detektivu potrebno za praćenje. 
+**Haker** - Radi za detektiva i po njegovom nalogu hakuje ono što je detektivu potrebno za praćenje. 
 
-Utjerivač duga - Osoba koja će se pobrinuti da klijent plati sve ono što je kupio od firme.
+**Utjerivač duga** - Osoba koja će se pobrinuti da klijent plati sve ono što je kupio od firme.

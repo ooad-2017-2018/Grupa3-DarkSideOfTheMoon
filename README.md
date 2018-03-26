@@ -110,7 +110,7 @@ Ukoliko klijent naruči izradu lažnih dokumenata potrebno je da odabere koji do
  
  **Nabavka nove robe**
  
- Dobavljači robe rade na terenu gdje obilaze antikvitetarnice i traže robu koju bi mafija mogla kupiti a kasnije i preprodati svojim klijentima. Nakon utvrđivanja autentičnosti robe, šalje se zahtjev upravi sa detaljnim podacima o robi i slikom. Uprava treba da većinom odluči da li se isplati kupiti određenu robu. Nakon odobrenja dobavljač treba da donese robu u sjedište mafije.
+ Dobavljači robe rade na terenu gdje obilaze antikvarnice i traže robu koju bi mafija mogla kupiti a kasnije i preprodati svojim klijentima. Nakon utvrđivanja autentičnosti robe, šalje se zahtjev upravi sa detaljnim podacima o robi i slikom. Uprava treba da većinom odluči da li se isplati kupiti određenu robu. Nakon odobrenja dobavljač treba da donese robu u sjedište mafije.
  
  **Dostava robe klijentu**
  

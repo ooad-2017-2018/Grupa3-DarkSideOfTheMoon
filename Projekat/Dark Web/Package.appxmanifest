@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="8a785e54-a6f3-4aa6-a47d-0243d1b8843d"
-    Publisher="CN=adem"
+    Name="c60afd3d-18cb-4b8b-bd0d-bf601319ae21"
+    Publisher="CN=win10"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="8a785e54-a6f3-4aa6-a47d-0243d1b8843d" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="c60afd3d-18cb-4b8b-bd0d-bf601319ae21" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>DarkWeb</DisplayName>
-    <PublisherDisplayName>adem</PublisherDisplayName>
+    <DisplayName>Dark Web</DisplayName>
+    <PublisherDisplayName>win10</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="DarkWeb.App">
+      EntryPoint="Dark_Web.App">
       <uap:VisualElements
-        DisplayName="DarkWeb"
+        DisplayName="Dark Web"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="DarkWeb"
+        Description="Dark Web"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

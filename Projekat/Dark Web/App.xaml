@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="DarkWeb.App"
+    x:Class="Dark_Web.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:DarkWeb"
+    xmlns:local="using:Dark_Web"
     RequestedTheme="Light">
 
 </Application>

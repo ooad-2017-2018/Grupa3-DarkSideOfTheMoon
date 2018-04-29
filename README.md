@@ -37,7 +37,6 @@ Prilikom registracije potrebno je da klijenti unesu sljedeće podatke:
  - Prezime
  - Adresa stanovanja
  - Broj telefon
- - Broj računa u banci
  - E-mail adresa
  - _Tajni kod_
  - Password 

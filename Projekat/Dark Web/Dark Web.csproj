@@ -95,19 +95,22 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klijent.xaml.cs">
-      <DependentUpon>Klijent.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Izvjestaj.cs" />
+    <Compile Include="Klijent.cs" />
     <Compile Include="KreiranjeRacuna.xaml.cs">
       <DependentUpon>KreiranjeRacuna.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Mafija.cs" />
+    <Compile Include="Osoba.cs" />
     <Compile Include="Prijava.xaml.cs">
       <DependentUpon>Prijava.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roba.cs" />
     <Compile Include="Uprava.xaml.cs">
       <DependentUpon>Uprava.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Zahtjev.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -134,10 +137,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Klijent.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="KreiranjeRacuna.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

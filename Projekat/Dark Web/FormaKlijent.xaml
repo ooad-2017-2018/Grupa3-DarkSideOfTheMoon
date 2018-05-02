@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="Dark_Web.FormaKlijent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Dark_Web"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot Title="FormaKlijent">
+            <PivotItem Header="Kupovina">
+                <Grid>
+                    <Image Source="Assets/Pozadina2.jpg" Stretch="Fill"/>
+                    <RadioButton Content="Dijamant" FontSize="20" Foreground="#FF09F909" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,100,0,0" RequestedTheme="Dark"/>
+                    <RadioButton Content="Nakit" FontSize="20" Foreground="#FF09F909" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,150,0,0" RequestedTheme="Dark"/>
+                    <RadioButton Content="Antikvitet" FontSize="20" Foreground="#FF09F909" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,200,0,0" RequestedTheme="Dark"/>
+                    <RadioButton Content="Slika" FontSize="20" Foreground="#FF09F909" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,250,0,0" RequestedTheme="Dark"/>
+                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Potvrdi" HorizontalAlignment="Left" Margin="220,347,0,0" VerticalAlignment="Top"/>
+
+                    <ListView Background="White" HorizontalAlignment="Left" Height="290" Margin="520,113,0,0" VerticalAlignment="Top" Width="448"/>
+
+
+
+                </Grid>
+                
+                
+            </PivotItem>
+            <PivotItem Header="Lazni dokumenti">
+                <Grid>
+                    <Image Source="Assets/Pozadina1.jpg" Stretch="Fill"/>
+
+
+
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Privatni detektiv">
+                <Grid>
+
+
+                </Grid>
+            </PivotItem>
+        </Pivot>
+        <Button Foreground="Black" Content="Odjavi se" FontSize="20" HorizontalAlignment="Left" Margin="1200,50,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+
+    </Grid>
+</Page>

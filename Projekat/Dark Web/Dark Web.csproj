@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FormaKlijent.xaml.cs">
+      <DependentUpon>FormaKlijent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Izvjestaj.cs" />
     <Compile Include="Klijent.cs" />
     <Compile Include="KreiranjeRacuna.xaml.cs">
@@ -120,6 +123,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\KreirajRacun.jpg" />
+    <Content Include="Assets\Pozadina1.jpg" />
+    <Content Include="Assets\Pozadina2.jpg" />
     <Content Include="Assets\Pozadina5.jpg" />
     <Content Include="Assets\Pozadina6.jpg" />
     <Content Include="Assets\Prijava.jpg" />
@@ -137,6 +142,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FormaKlijent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="KreiranjeRacuna.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

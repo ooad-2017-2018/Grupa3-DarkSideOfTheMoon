@@ -19,16 +19,16 @@
         <TextBlock Foreground="#FF09F909" FontSize="20" HorizontalAlignment="Left" Margin="50,450,0,0" Text="Tajni kod" TextWrapping="Wrap" VerticalAlignment="Top" />
 
 
-        <TextBox HorizontalAlignment="Left" Margin="240,50,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
-        <TextBox HorizontalAlignment="Left" Margin="240,100,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
-        <TextBox HorizontalAlignment="Left" Margin="240,150,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
-        <TextBox HorizontalAlignment="Left" Margin="240,200,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
-        <TextBox HorizontalAlignment="Left" Margin="240,250,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
-        <TextBox HorizontalAlignment="Left" Margin="240,300,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
-        <TextBox HorizontalAlignment="Left" Margin="240,350,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
+        <TextBox x:Name="Ime" HorizontalAlignment="Left" Margin="240,50,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
+        <TextBox x:Name="Prezime" HorizontalAlignment="Left" Margin="240,100,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
+        <TextBox x:Name="adresaStanovanja" HorizontalAlignment="Left" Margin="240,150,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
+        <TextBox x:Name="brojTelefona" HorizontalAlignment="Left" Margin="240,200,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="240,250,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
+        <TextBox x:Name="korisnickoIme" HorizontalAlignment="Left" Margin="240,300,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
+        <TextBox x:Name="lozinka" HorizontalAlignment="Left" Margin="240,350,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
         <TextBox HorizontalAlignment="Left" Margin="240,450,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
 
-        <Button  Background="#FF615F60" Foreground="#FF09F909" Content="Kreiraj racun" HorizontalAlignment="Left" Margin="185,528,0,0" VerticalAlignment="Top" Height="72" Width="205"/>
+        <Button  Background="#FF615F60" Foreground="#FF09F909" Content="Kreiraj racun" HorizontalAlignment="Left" Margin="185,528,0,0" VerticalAlignment="Top" Height="72" Width="205" Click="Button_Click2"/>
         <Button x:Name="DugmeNazad" Background="#FF615F60" Foreground="#FF09F909" Content="Nazad" HorizontalAlignment="Left" Margin="400,528,0,0" VerticalAlignment="Top" Height="72" Width="205" Click="Button_Click"/>
 
 

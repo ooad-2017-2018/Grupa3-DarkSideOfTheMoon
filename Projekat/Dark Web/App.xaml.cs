@@ -14,14 +14,58 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+
+
 
 namespace Dark_Web
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
+    /// 
+    
+
+    class mafijasi
+    {
+        public string id
+        {
+            get;
+            set;
+        }
+        public string ime
+        {
+            get;
+            set;
+        }        public string prezime
+        {
+            get;
+            set;
+        }        public string email
+        {
+            get;
+            set;
+        }        public string adresaStanovanja
+        {
+            get;
+            set;
+        }        public int brojTelefona
+        {
+            get;
+            set;
+        }        public string korisnickoIme
+        {
+            get;
+            set;
+        }        public string lozinka
+        {
+            get;
+            set;
+        }
+    }
     sealed partial class App : Application
     {
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://dark--web.azurewebsites.net");
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().

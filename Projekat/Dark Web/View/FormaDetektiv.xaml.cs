@@ -20,16 +20,16 @@ namespace Dark_Web.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Detektiv : Page
+    public sealed partial class FormaDetektiv : Page
     {
-        public Detektiv()
+        public FormaDetektiv()
         {
             this.InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainPage)); 
         }
     }
 }

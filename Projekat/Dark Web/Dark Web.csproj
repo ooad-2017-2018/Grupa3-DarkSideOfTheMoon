@@ -114,9 +114,6 @@
     <Compile Include="View\FormaDostavljac.xaml.cs">
       <DependentUpon>FormaDostavljac.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\FormaHaker.xaml.cs">
-      <DependentUpon>FormaHaker.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\Prijava.xaml.cs">
       <DependentUpon>Prijava.xaml</DependentUpon>
     </Compile>
@@ -165,10 +162,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\FormaDostavljac.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\FormaHaker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -46,6 +46,8 @@ namespace Dark_Web
         {
             if(KorisnickoIme.Text=="uprava" && Lozinka.Text=="uprava")
                 this.Frame.Navigate(typeof(Uprava));
+            if (KorisnickoIme.Text == "detektiv" && Lozinka.Text == "detektiv")
+                this.Frame.Navigate(typeof(FormaDetektiv)); 
         }
     }
 }

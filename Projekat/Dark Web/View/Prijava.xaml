@@ -1,13 +1,13 @@
 ﻿<Page
-    x:Class="Dark_Web.MainPage"
+    x:Class="Dark_Web.View.Prijava"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Dark_Web"
+    xmlns:local="using:Dark_Web.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Default">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image Source="Assets/Prijava.jpg" Stretch="Fill" Margin="0,0,-5,0"/>
         <Button Background="#FF615F60" Content="Prijava" HorizontalAlignment="Left" Margin="310,285,0,0" VerticalAlignment="Top" Height="62" Width="155" Foreground = "#FF09F909"  ClickMode = "Press" RequestedTheme="Dark" Click="Button_Click_2"/>
         <Button Background="#FF615F60" Content="Kreiraj racun" HorizontalAlignment="Left" Margin="310,443,0,0" VerticalAlignment="Top" Height="62" Width="155"  ClickMode = "Press"  Foreground = "#FF09F909" RequestedTheme="Dark" Click="Button_Click_1"/>
@@ -16,6 +16,6 @@
         <TextBlock  Foreground="#FF09F909" HorizontalAlignment="Left" Margin="137,155,0,0" Text="Korisnicko ime:" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="20"/>
         <TextBlock Foreground="#FF09F909" HorizontalAlignment="Left" Margin="245,383,0,0" Text="Nemate kreiran korisnicki racun?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock Foreground="#FF09F909" HorizontalAlignment="Left" Margin="165,205,0,0" Text="Lozinka" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.227,0.37"/>
-        
+
     </Grid>
 </Page>

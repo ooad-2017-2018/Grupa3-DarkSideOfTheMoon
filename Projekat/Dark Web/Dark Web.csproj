@@ -95,12 +95,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FormaKlijent.xaml.cs">
-      <DependentUpon>FormaKlijent.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="KreiranjeRacuna.xaml.cs">
-      <DependentUpon>KreiranjeRacuna.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Model\Izvjestaj.cs" />
     <Compile Include="Model\Klijent.cs" />
     <Compile Include="Model\Mafija.cs" />
@@ -114,11 +108,14 @@
     <Compile Include="View\FormaDostavljac.xaml.cs">
       <DependentUpon>FormaDostavljac.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Prijava.xaml.cs">
-      <DependentUpon>Prijava.xaml</DependentUpon>
+    <Compile Include="View\FormaHaker.xaml.cs">
+      <DependentUpon>FormaHaker.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\FormaUprava.xaml.cs">
       <DependentUpon>FormaUprava.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Prijava.xaml.cs">
+      <DependentUpon>Prijava.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -149,14 +146,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="FormaKlijent.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="KreiranjeRacuna.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\FormaDetektiv.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -165,13 +154,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Prijava.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="View\FormaHaker.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\FormaUprava.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Prijava.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

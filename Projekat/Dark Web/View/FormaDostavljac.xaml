@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Dark_Web.View.Dostavljac"
+    x:Class="Dark_Web.View.FormaDostavljac"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Dark_Web.View"
@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="Assets/Pozadina6.jpg" Stretch="Fill" Margin="0,0,-5,0"/>
+        <ListView Background="White" HorizontalAlignment="Left" Height="310" VerticalAlignment="Top" Width="330" Margin="82,112,0,0"/>
+        <Button  Background="#FF615F60" Foreground = "#FF09F909" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="759,25,0,0" Click="Button_Click"/>
+        <Button  Background="#FF615F60" Foreground = "#FF09F909" Content="Naplaceno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="564,449,0,0"/>
+        <Button  Background="#FF615F60" Foreground = "#FF09F909" Content="Nije naplaceno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="688,449,0,0"/>
+        <TextBox HorizontalAlignment="Left" Text="Detalji" VerticalAlignment="Top" Margin="506,111,0,0" Height="312" Width="342"/>
+
 
     </Grid>
 </Page>

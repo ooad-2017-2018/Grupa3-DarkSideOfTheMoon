@@ -15,21 +15,21 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Dark_Web
+namespace Dark_Web.View
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Uprava : Page
+    public sealed partial class FormaUprava : Page
     {
-        public Uprava()
+        public FormaUprava()
         {
             this.InitializeComponent();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(Prijava));
         }
+      
     }
 }

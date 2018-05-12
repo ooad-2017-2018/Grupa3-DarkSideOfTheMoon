@@ -26,7 +26,10 @@ namespace Dark_Web.View
         {
             this.InitializeComponent();
         }
-     
+     private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
@@ -35,7 +38,9 @@ namespace Dark_Web.View
             else if (KorisnickoIme.Text == "detektiv" && Lozinka.Text == "detektiv")
                 this.Frame.Navigate(typeof(FormaDetektiv));
             else if (KorisnickoIme.Text == "dostavljac" && Lozinka.Text == "dostavljac")
-                this.Frame.Navigate(typeof(FormaDostavljac)); 
+                this.Frame.Navigate(typeof(FormaDostavljac));
+            else if (KorisnickoIme.Text == "haker" && Lozinka.Text == "haker")
+                this.Frame.Navigate(typeof(FormaHaker));
         }
     }
 }

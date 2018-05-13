@@ -8,11 +8,11 @@ namespace Dark_Web
 {
     public class Mafija
     {
-        private List<Osoba> listaUposlenikaMafije;
-        private List<Klijent> listaKlijenataMafije;
-        private List<Roba> listaRobe;
-        private List<Zahtjev> listaZahtjeva;
-        private List<Izvjestaj> listaIzvjestaja; 
+        public List<Osoba> listaUposlenikaMafije;
+        public List<Klijent> listaKlijenataMafije;
+        public List<Roba> listaRobe;
+        public List<Zahtjev> listaZahtjeva;
+        public List<Izvjestaj> listaIzvjestaja; 
 
         public Mafija()
         {
@@ -50,6 +50,13 @@ namespace Dark_Web
         public void DodajIzvjestaj (Izvjestaj noviIzvjestaj)
         {
             listaIzvjestaja.Add(noviIzvjestaj); 
+        }
+        public void obrisiRobu(Roba roba)
+        {
+            foreach (Roba r in listaRobe){
+                if (r.Naziv == roba.Naziv)
+                    listaRobe.Remove(roba);
+            }
         }
 
     }

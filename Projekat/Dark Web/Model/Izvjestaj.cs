@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Dark_Web
 {
+    public enum VrstaIzvjestaja { Pracenje, Hakiranje, UtjerivanjeDuga, NaplataKarticom, NaplataGotovinom };
+
     public class Izvjestaj
     {
-        public enum VrstaIzvjestaja { Pracenje, Hakiranje, UtjerivanjeDuga, NaplataKarticom, NaplataGotovinom };
         VrstaIzvjestaja vrstaIzvjestaja;
         string opisIzvjestaja;
 

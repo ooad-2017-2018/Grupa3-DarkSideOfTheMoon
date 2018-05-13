@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Windows.UI.Xaml.Controls;
+using Dark_Web.Model;
 namespace Dark_Web
 {
     public class Klijent :  Osoba
     {
-        public enum VrstaZahtjeva { FalsifikacijaDokumenata, Hakiranje, IznajmljivanjeDetektiva, UtjerivanjeDuga, BrisanjeRobe, UnosINaplataRobe };
-
         string tajniKod;
         double stanjeRacuna;
 
@@ -18,13 +17,25 @@ namespace Dark_Web
             this.tajniKod = tajniKod;
             this.stanjeRacuna = stanjeRacuna;
         }
-        public void ZahtjevZaLazneDokumente(string ime, DateTime datumRodjenja, string mjestoRodjenja, string drzavljanstvo, string prebivaliste, bool spol, int vrstaDokumenta  /*Image slika*/)
+        public void ZahtjevZaLazneDokumente(string ime, string prezime, DateTime datumRodjenja, string mjestoRodjenja, string drzavljanstvo, string prebivaliste, bool spol, int vrstaDokumenta, Image slika)
         {
-            Zahtjev noviZahtjev = new Zahtjev(); 
+            string ostaleinfo = ime + " " + prezime + " " + datumRodjenja.ToString() + " " + mjestoRodjenja + " " + drzavljanstvo + " " + prebivaliste;
+            if (spol == true) ostaleinfo += " Musko";
+            else ostaleinfo += " Zensko";
+            Zahtjev noviZahtjev = new Zahtjev(VrstaZahtjeva.FalsifikacijaDokumenata, ostaleinfo, slika);
+            GlobalnaMafija.mafija.DodajZahtjev(noviZahtjev); 
         }   
-        public void ZahtjevZaPrivatnogDetektiva(string ime, string prezime, string adresaStanovanja, string srodstvo, bool zaposlen, string nazivZaposlen, string adresaZaposlen, bool uUdruzenju,  string nazivUdruzenje, string adresaUdruzenje, string ostaleInformacije)
+        public void ZahtjevZaPrivatnogDetektiva(string ime, string prezime, string adresaStanovanja, string srodstvo, bool zaposlen, string nazivZaposlen, string adresaZaposlen, bool uUdruzenju,  string nazivUdruzenje, string adresaUdruzenje, string ostaleInformacije, Image slika)
         {
-            Zahtjev noviZahtjev = new Zahtjev(); 
+            string ostaleinfo = ime + " " + prezime + " " + adresaStanovanja + " " + srodstvo + " " ;
+            if (zaposlen)
+            
+                ostaleinfo += nazivZaposlen + " " + adresaZaposlen +" ";
+            if (uUdruzenju)
+                ostaleinfo += nazivUdruzenje + " " + adresaUdruzenje+ " ";
+            ostaleinfo += ostaleInformacije; 
+            Zahtjev noviZahtjev = new Zahtjev(VrstaZahtjeva.IznajmljivanjeDetektiva, ostaleinfo, slika);
+            GlobalnaMafija.mafija.DodajZahtjev(noviZahtjev); 
         }
     }
 }

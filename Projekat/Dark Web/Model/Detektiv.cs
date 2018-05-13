@@ -14,7 +14,7 @@ namespace Dark_Web.Model
         }
         public void napisiIzvjestaj()
         {
-            string izvjestaj = "pokupio iz textboxa";
+            string izvjestaj = "pokupio iz textbox";
             Izvjestaj noviIzvjestaj = new Izvjestaj(VrstaIzvjestaja.Hakiranje, izvjestaj); 
             GlobalnaMafija.mafija.DodajIzvjestaj(noviIzvjestaj); 
         }

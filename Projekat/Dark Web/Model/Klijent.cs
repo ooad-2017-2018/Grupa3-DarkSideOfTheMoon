@@ -7,7 +7,7 @@ using Windows.UI.Xaml.Controls;
 using Dark_Web.Model;
 namespace Dark_Web
 {
-    public class Klijent :  Osoba
+    public class Klijent :  Osoba, IZahtjev
     {
         string tajniKod;
         double stanjeRacuna;
@@ -36,6 +36,10 @@ namespace Dark_Web
             ostaleinfo += ostaleInformacije; 
             Zahtjev noviZahtjev = new Zahtjev(VrstaZahtjeva.IznajmljivanjeDetektiva, ostaleinfo, slika);
             GlobalnaMafija.mafija.DodajZahtjev(noviZahtjev); 
+        }
+        public string ispisiZahtjev(Zahtjev zahtjev)
+        {
+            return "nista";
         }
     }
 }

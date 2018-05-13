@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Dark_Web.View.FormaDobavljac"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Dark_Web.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
+        <ListView Background="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="162" VerticalAlignment="Top" Width="358" Margin="54,120,0,0"/>
+        <TextBox HorizontalAlignment="Left" Text="Detaljan opis" VerticalAlignment="Top" Margin="458,206,0,0" Width="294" Height="256"/>
+        <TextBox HorizontalAlignment="Left" Text="Naziv" VerticalAlignment="Top" Margin="468,128,0,0" Width="290"/>
+        <TextBox HorizontalAlignment="Left" Text="Detalji" VerticalAlignment="Top" Margin="56,326,0,0" Height="132" Width="358"/>
+        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="662,26,0,0"/>
+        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Ucitaj sliku..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="834,340,0,0"/>
+        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Dostavljeno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="194,496,0,0"/>
+        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Podnesi zahtjev" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="544,494,0,0"/>
+        <Image HorizontalAlignment="Left" Height="196" VerticalAlignment="Top" Width="212" Margin="770,122,0,0"/>
+
+    </Grid>
+</Page>

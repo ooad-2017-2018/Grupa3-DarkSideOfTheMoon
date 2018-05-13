@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dark_Web.Model
 {
-    public class UtjerivacDuga : Osoba
+    public class UtjerivacDuga : Osoba, IIzvjestaj
     {
         public UtjerivacDuga(string ime, string prezime, string email, string adresa, string brojTelefona, string korisnickoIme, string lozinka): base(ime, prezime, email, adresa, brojTelefona, korisnickoIme, lozinka)
         {
@@ -15,6 +15,14 @@ namespace Dark_Web.Model
         public void UtjeranDug(Zahtjev zahtjev)
         {
             GlobalnaMafija.mafija.listaZahtjeva.Remove(zahtjev);  
+        }
+        public void napisiIzvjestaj()
+        {
+
+        }
+        public string dajIzvjestaj(VrstaIzvjestaja vrsta)
+        {
+            return "nista"; 
         }
     }
 }

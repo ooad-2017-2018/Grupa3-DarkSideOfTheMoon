@@ -99,7 +99,12 @@
     <Compile Include="Model\Detektiv.cs" />
     <Compile Include="Model\Dobavljac.cs" />
     <Compile Include="Model\Dostavljac.cs" />
+    <Compile Include="Model\Falsifikator.cs" />
     <Compile Include="Model\Haker.cs" />
+    <Compile Include="Model\IBazaPodataka.cs" />
+    <Compile Include="Model\IIzvjestaj.cs" />
+    <Compile Include="Model\IUprava.cs" />
+    <Compile Include="Model\IZahtjev.cs" />
     <Compile Include="Model\Izvjestaj.cs" />
     <Compile Include="Model\Klijent.cs" />
     <Compile Include="Model\Mafija.cs" />
@@ -112,14 +117,23 @@
     <Compile Include="View\FormaDetektiv.xaml.cs">
       <DependentUpon>FormaDetektiv.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\FormaDobavljac.xaml.cs">
+      <DependentUpon>FormaDobavljac.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\FormaDostavljac.xaml.cs">
       <DependentUpon>FormaDostavljac.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormaFalsifikator.xaml.cs">
+      <DependentUpon>FormaFalsifikator.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\FormaHaker.xaml.cs">
       <DependentUpon>FormaHaker.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\FormaUprava.xaml.cs">
       <DependentUpon>FormaUprava.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormaUtjerivacDuga.xaml.cs">
+      <DependentUpon>FormaUtjerivacDuga.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Prijava.xaml.cs">
       <DependentUpon>Prijava.xaml</DependentUpon>
@@ -133,12 +147,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\KreirajRacun.jpg" />
+    <Content Include="Assets\LicnaKarta.jpg" />
+    <Content Include="Assets\Pasos.jpg" />
     <Content Include="Assets\Pozadina1.jpg" />
     <Content Include="Assets\Pozadina2.jpg" />
     <Content Include="Assets\Pozadina4.jpg" />
     <Content Include="Assets\Pozadina5.jpg" />
     <Content Include="Assets\Pozadina6.jpg" />
     <Content Include="Assets\Prijava.jpg" />
+    <Content Include="Assets\utjerivac dugova.jpg" />
+    <Content Include="Assets\Vozacka.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -157,7 +175,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\FormaDobavljac.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\FormaDostavljac.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FormaFalsifikator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -166,6 +192,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\FormaUprava.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FormaUtjerivacDuga.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

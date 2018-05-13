@@ -13,8 +13,12 @@ namespace Dark_Web
     {
         VrstaZahtjeva vrstaZahtjeva;
         string ostaleInformacije;
-        Image slika; 
+        Image slika;
 
+        public override string ToString()
+        {
+            return ostaleInformacije;
+        }
         public Zahtjev() { }
 
         public Zahtjev (VrstaZahtjeva vrsta, string ostaleInfo)

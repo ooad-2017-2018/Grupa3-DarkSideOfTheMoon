@@ -9,15 +9,15 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
-        <ListView Background="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="162" VerticalAlignment="Top" Width="358" Margin="54,120,0,0"/>
-        <TextBox HorizontalAlignment="Left" Text="Detaljan opis" VerticalAlignment="Top" Margin="458,206,0,0" Width="294" Height="256"/>
-        <TextBox HorizontalAlignment="Left" Text="Naziv" VerticalAlignment="Top" Margin="468,128,0,0" Width="290"/>
+        <ListView x:Name="lista" Background="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="162" VerticalAlignment="Top" Width="358" Margin="54,120,0,0"/>
+        <TextBox x:Name="detalji" HorizontalAlignment="Left" Text="Detaljan opis" VerticalAlignment="Top" Margin="458,206,0,0" Width="294" Height="256"/>
+        <TextBox x:Name="naziv" HorizontalAlignment="Left" Text="Naziv" VerticalAlignment="Top" Margin="468,128,0,0" Width="290"/>
         <TextBox HorizontalAlignment="Left" Text="Detalji" VerticalAlignment="Top" Margin="56,326,0,0" Height="132" Width="358"/>
         <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="662,26,0,0" Click="Button_Click"/>
         <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Ucitaj sliku..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="834,340,0,0"/>
-        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Dostavljeno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="194,496,0,0"/>
-        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Podnesi zahtjev" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="544,494,0,0"/>
-        <Image HorizontalAlignment="Left" Height="196" VerticalAlignment="Top" Width="212" Margin="770,122,0,0"/>
+        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Dostavljeno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="194,496,0,0" Click="Button_Click_1"/>
+        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Podnesi zahtjev" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="544,494,0,0" Click="Button_Click_2"/>
+        <Image x:Name="slika" HorizontalAlignment="Left" Height="196" VerticalAlignment="Top" Width="212" Margin="770,122,0,0"/>
 
     </Grid>
 </Page>

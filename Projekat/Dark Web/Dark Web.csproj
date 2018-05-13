@@ -114,14 +114,14 @@
     <Compile Include="Model\UtjerivacDuga.cs" />
     <Compile Include="Model\Zahtjev.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModel\FormaDetektiv.xaml.cs" />
-    <Compile Include="ViewModel\FormaDobavljac.xaml.cs" />
-    <Compile Include="ViewModel\FormaDostavljac.xaml.cs" />
-    <Compile Include="ViewModel\FormaFalsifikator.xaml.cs" />
-    <Compile Include="ViewModel\FormaHaker.xaml.cs" />
-    <Compile Include="ViewModel\FormaUprava.xaml.cs" />
-    <Compile Include="ViewModel\FormaUtjerivacDuga.xaml.cs" />
-    <Compile Include="ViewModel\Prijava.xaml.cs" />
+    <Compile Include="View\FormaDetektiv.xaml.cs" />
+    <Compile Include="View\FormaDobavljac.xaml.cs" />
+    <Compile Include="View\FormaDostavljac.xaml.cs" />
+    <Compile Include="View\FormaFalsifikator.xaml.cs" />
+    <Compile Include="View\FormaHaker.xaml.cs" />
+    <Compile Include="View\FormaUprava.xaml.cs" />
+    <Compile Include="View\FormaUtjerivacDuga.xaml.cs" />
+    <Compile Include="View\Prijava.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

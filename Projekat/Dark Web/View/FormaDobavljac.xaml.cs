@@ -20,9 +20,9 @@ namespace Dark_Web.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FormaDetektiv : Page
+    public sealed partial class FormaDobavljac : Page
     {
-        public FormaDetektiv()
+        public FormaDobavljac()
         {
             this.InitializeComponent();
         }
@@ -31,5 +31,14 @@ namespace Dark_Web.View
         {
             this.Frame.Navigate(typeof(Prijava)); 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            GlobalnaMafija.mafija.listaZahtjeva.RemoveAt(lista.SelectedIndex);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Zahtjev novi = new Zahtjev(VrstaZahtjeva.UnosINaplataRobe, naziv.Text + "\n" + detalji.Text, slika);         }
     }
 }

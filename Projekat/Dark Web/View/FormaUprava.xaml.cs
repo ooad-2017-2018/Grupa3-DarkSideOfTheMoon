@@ -25,6 +25,8 @@ namespace Dark_Web.View
     public sealed partial class FormaUprava : Page
     {
         IMobileServiceTable<mafijasi> userTableObj = App.MobileService.GetTable<mafijasi>();
+        
+
         public FormaUprava()
         {
             this.InitializeComponent();
@@ -50,13 +52,12 @@ namespace Dark_Web.View
                 obj.lozinka = lozinka.Text;
                 userTableObj.InsertAsync(obj);
                 MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog uposlenika.");
-                
-                
                 msgDialog.ShowAsync();
                                 }
                            catch (Exception ex)
                {
-                MessageDialog msgDialogError = new MessageDialog("Error : " +ex.ToString());
+                
+               MessageDialog msgDialogError = new MessageDialog("Error : " +ex.ToString());
                 msgDialogError.ShowAsync();
                               }
             }

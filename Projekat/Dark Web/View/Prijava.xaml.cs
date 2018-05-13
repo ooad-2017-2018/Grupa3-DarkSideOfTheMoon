@@ -12,7 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Dark_Web.View; 
+using Dark_Web.View;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,10 +28,21 @@ namespace Dark_Web.View
         {
             this.InitializeComponent();
         }
+        public void pocisti()
+        {
+            KorisnickoIme.Text = "";
+            Lozinka.Password = ""; 
+        }
      
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (KorisnickoIme.Text == "uprava" && Lozinka.Password.ToString()=="uprava")
+            if(KorisnickoIme.Text == "" || Lozinka.Password.ToString() == "")
+            {
+                MessageDialog msgDialog = new MessageDialog("Polje korisnicko ime ili lozinka su prazni!");
+                msgDialog.ShowAsync();
+                pocisti(); 
+            }
+            else if (KorisnickoIme.Text == "uprava" && Lozinka.Password.ToString()=="uprava")
                 this.Frame.Navigate(typeof(FormaUprava));
             else if (KorisnickoIme.Text == "detektiv" && Lozinka.Password.ToString() == "detektiv")
                 this.Frame.Navigate(typeof(FormaDetektiv));
@@ -44,6 +56,12 @@ namespace Dark_Web.View
                 this.Frame.Navigate(typeof(FormaFalsifikator));
             else if (KorisnickoIme.Text == "utjerivac" && Lozinka.Password.ToString() == "utjerivac")
                 this.Frame.Navigate(typeof(FormaUtjerivacDuga));
+            else
+            {
+                MessageDialog msgDialog = new MessageDialog("Korisnicko ime ili lozinka nisu ispravni");
+                msgDialog.ShowAsync();
+                pocisti(); 
+            }
         }
     }
 }

@@ -37,35 +37,44 @@ namespace Dark_Web
         {
             get;
             set;
-        }        public string prezime
+        }
+        public string prezime
         {
             get;
             set;
-        }        public string email
+        }
+        public string email
         {
             get;
             set;
-        }        public string adresaStanovanja
+        }
+        public string adresaStanovanja
         {
             get;
             set;
-        }        public int brojTelefona
+        }
+        public int brojTelefona
         {
             get;
             set;
-        }        public string korisnickoIme
+        }
+        public string korisnickoIme
         {
             get;
             set;
-        }        public string lozinka
+        }
+        public string lozinka
         {
             get;
             set;
-        }
+        }
+
+
     }
     sealed partial class App : Application
     {
-        public static MobileServiceClient MobileService = new MobileServiceClient("https://dark--web.azurewebsites.net");
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://dark--web.azurewebsites.net");
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().

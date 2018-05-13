@@ -57,7 +57,7 @@
                 </Grid>
             </PivotItem>
         </Pivot>
-        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1146,27,0,0"/>
+        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1146,27,0,0" Click="Button_Click_1"/>
 
 
 

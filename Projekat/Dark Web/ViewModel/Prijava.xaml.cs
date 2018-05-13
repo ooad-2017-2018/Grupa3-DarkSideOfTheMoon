@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Dark_Web.View; 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,21 +27,23 @@ namespace Dark_Web.View
         {
             this.InitializeComponent();
         }
-     private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+     
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (KorisnickoIme.Text == "uprava" && Lozinka.Text == "uprava")
+            if (KorisnickoIme.Text == "uprava" && Lozinka.Password.ToString()=="uprava")
                 this.Frame.Navigate(typeof(FormaUprava));
-            else if (KorisnickoIme.Text == "detektiv" && Lozinka.Text == "detektiv")
+            else if (KorisnickoIme.Text == "detektiv" && Lozinka.Password.ToString() == "detektiv")
                 this.Frame.Navigate(typeof(FormaDetektiv));
-            else if (KorisnickoIme.Text == "dostavljac" && Lozinka.Text == "dostavljac")
+            else if (KorisnickoIme.Text == "dostavljac" && Lozinka.Password.ToString() == "dostavljac")
                 this.Frame.Navigate(typeof(FormaDostavljac));
-            else if (KorisnickoIme.Text == "haker" && Lozinka.Text == "haker")
+            else if (KorisnickoIme.Text == "haker" && Lozinka.Password.ToString() == "haker")
                 this.Frame.Navigate(typeof(FormaHaker));
+            else if (KorisnickoIme.Text == "dobavljac" && Lozinka.Password.ToString() == "dobavljac")
+                this.Frame.Navigate(typeof(FormaDobavljac));
+            else if (KorisnickoIme.Text == "falsifikator" && Lozinka.Password.ToString() == "falsifikator")
+                this.Frame.Navigate(typeof(FormaFalsifikator));
+            else if (KorisnickoIme.Text == "utjerivac" && Lozinka.Password.ToString() == "utjerivac")
+                this.Frame.Navigate(typeof(FormaUtjerivacDuga));
         }
     }
 }

@@ -10,12 +10,10 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image Source="Assets/Prijava.jpg" Stretch="Fill" Margin="0,0,-5,0"/>
         <Button Background="#FF615F60" Content="Prijava" HorizontalAlignment="Left" Margin="310,285,0,0" VerticalAlignment="Top" Height="62" Width="155" Foreground = "#FF09F909"  ClickMode = "Press" RequestedTheme="Dark" Click="Button_Click_2"/>
-        <Button Background="#FF615F60" Content="Kreiraj racun" HorizontalAlignment="Left" Margin="310,443,0,0" VerticalAlignment="Top" Height="62" Width="155"  ClickMode = "Press"  Foreground = "#FF09F909" RequestedTheme="Dark" Click="Button_Click_1"/>
         <TextBox x:Name="KorisnickoIme" HorizontalAlignment="Left" Margin="310,160,0,0" Text="" VerticalAlignment="Top" Width="260" Height="32"/>
-        <TextBox x:Name="Lozinka" HorizontalAlignment="Left" Margin="310,210,0,0" Text="" VerticalAlignment="Top" Width="260" Height="32"/>
         <TextBlock  Foreground="#FF09F909" HorizontalAlignment="Left" Margin="137,155,0,0" Text="Korisnicko ime:" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="20"/>
-        <TextBlock Foreground="#FF09F909" HorizontalAlignment="Left" Margin="245,383,0,0" Text="Nemate kreiran korisnicki racun?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock Foreground="#FF09F909" HorizontalAlignment="Left" Margin="165,205,0,0" Text="Lozinka" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.227,0.37"/>
+        <PasswordBox x:Name="Lozinka"  HorizontalAlignment="Left"  Margin="310,210,0,0" VerticalAlignment="Top" Width="260" Height="32"/>
 
     </Grid>
 </Page>

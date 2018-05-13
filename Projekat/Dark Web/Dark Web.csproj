@@ -114,30 +114,14 @@
     <Compile Include="Model\UtjerivacDuga.cs" />
     <Compile Include="Model\Zahtjev.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\FormaDetektiv.xaml.cs">
-      <DependentUpon>FormaDetektiv.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormaDobavljac.xaml.cs">
-      <DependentUpon>FormaDobavljac.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormaDostavljac.xaml.cs">
-      <DependentUpon>FormaDostavljac.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormaFalsifikator.xaml.cs">
-      <DependentUpon>FormaFalsifikator.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormaHaker.xaml.cs">
-      <DependentUpon>FormaHaker.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormaUprava.xaml.cs">
-      <DependentUpon>FormaUprava.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormaUtjerivacDuga.xaml.cs">
-      <DependentUpon>FormaUtjerivacDuga.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Prijava.xaml.cs">
-      <DependentUpon>Prijava.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ViewModel\FormaDetektiv.xaml.cs" />
+    <Compile Include="ViewModel\FormaDobavljac.xaml.cs" />
+    <Compile Include="ViewModel\FormaDostavljac.xaml.cs" />
+    <Compile Include="ViewModel\FormaFalsifikator.xaml.cs" />
+    <Compile Include="ViewModel\FormaHaker.xaml.cs" />
+    <Compile Include="ViewModel\FormaUprava.xaml.cs" />
+    <Compile Include="ViewModel\FormaUtjerivacDuga.xaml.cs" />
+    <Compile Include="ViewModel\Prijava.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -212,9 +196,7 @@
       <Version>6.0.8</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image Source="Assets/utjerivac dugova.jpg" Stretch="Fill"/>
         <ListView Background="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="457" VerticalAlignment="Top" Width="376" Margin="114,132,0,0"/>
-        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="669,42,0,0"/>
+        <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="669,42,0,0" Click="Button_Click_1"/>
         <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Dug utjeran" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="255,609,0,0"/>
         <TextBox HorizontalAlignment="Left" Text="Detalji" VerticalAlignment="Top" Margin="561,141,0,0" Height="434" Width="343"/>
 

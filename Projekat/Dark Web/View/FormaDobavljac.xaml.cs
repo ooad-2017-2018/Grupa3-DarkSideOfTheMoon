@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -34,11 +35,29 @@ namespace Dark_Web.View
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            GlobalnaMafija.mafija.listaZahtjeva.RemoveAt(lista.SelectedIndex);
+            if(lista.SelectedItems.Count == 0)
+            {
+                MessageDialog msgDialog = new MessageDialog("Morate odabrati zahtjev.");
+                msgDialog.ShowAsync();
+            }
+            else
+            {
+                GlobalnaMafija.mafija.listaZahtjeva.RemoveAt(lista.SelectedIndex);
+            }
+            
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Zahtjev novi = new Zahtjev(VrstaZahtjeva.UnosINaplataRobe, naziv.Text + "\n" + detalji.Text, slika);         }
+            if(naziv.Text == "" || detalji.Text== "")
+            {
+                MessageDialog msgDialog = new MessageDialog("Morate napisati naziv i detalje.");
+                msgDialog.ShowAsync();
+            }
+            else
+            {
+                Zahtjev novi = new Zahtjev(VrstaZahtjeva.UnosINaplataRobe, naziv.Text + "\n" + detalji.Text, slika);
+            }
+        }
     }
 }

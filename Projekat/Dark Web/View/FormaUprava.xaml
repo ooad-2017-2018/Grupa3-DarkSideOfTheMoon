@@ -7,9 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded">
 
-        <Pivot Title="Uprava" Foreground="#FF09F909">
+        <Pivot Title="Uprava" Foreground="#FF09F909" Margin="0,30,0,0">
             <PivotItem Header="Mape" Foreground="#FF09F909">
                 <Grid>
 
@@ -21,23 +21,23 @@
             <PivotItem Header="Unos robe" Foreground="#FF09F909">
                 <Grid>
                     <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
-                    <RadioButton  Foreground="#FF09F909" FontSize="20" Content="Dijamant" HorizontalAlignment="Left" Margin="130,150,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
-                    <RadioButton Foreground="#FF09F909" FontSize="20" Content="Nakit" HorizontalAlignment="Left" Margin="130,200,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
-                    <RadioButton Foreground="#FF09F909" FontSize="20" Content="Antikvitet" HorizontalAlignment="Left" Margin="130,250,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
-                    <RadioButton Foreground="#FF09F909" FontSize="20" Content="Slika" HorizontalAlignment="Left" Margin="130,300,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
+                    <RadioButton x:Name="d"  Foreground="#FF09F909" FontSize="20" Content="Dijamant" HorizontalAlignment="Left" Margin="130,150,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
+                    <RadioButton x:Name="n" Foreground="#FF09F909" FontSize="20" Content="Nakit" HorizontalAlignment="Left" Margin="130,200,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
+                    <RadioButton x:Name="a" Foreground="#FF09F909" FontSize="20" Content="Antikvitet" HorizontalAlignment="Left" Margin="130,250,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
+                    <RadioButton x:Name="s" Foreground="#FF09F909" FontSize="20" Content="Slika" HorizontalAlignment="Left" Margin="130,300,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
                     <TextBlock Foreground="#FF09F909" FontSize="20" HorizontalAlignment="Left" Margin="130,100,0,0" Text="Kategorija" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
                     <TextBlock Foreground="#FF09F909" HorizontalAlignment="Left" Margin="350,100,0,0" Text="Naziv" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="350,150,0,0" Text="" VerticalAlignment="Top"  Width="260" Height="32"/>
+                    <TextBox x:Name="naziv" HorizontalAlignment="Left" Margin="350,150,0,0" Text="" VerticalAlignment="Top"  Width="260" Height="32"/>
 
                     <TextBlock Foreground="#FF09F909" HorizontalAlignment="Left" Margin="350,200,0,0" Text="Cijena" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="350,250,0,0" Text="" VerticalAlignment="Top"  Width="260" Height="32"/>
+                    <TextBox x:Name="cijena" HorizontalAlignment="Left" Margin="350,250,0,0" Text="" VerticalAlignment="Top"  Width="260" Height="32"/>
 
 
                     <TextBlock Foreground="#FF09F909" HorizontalAlignment="Left" Margin="350,300,0,0" Text="Opis" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="350,350,0,0" Text="" VerticalAlignment="Top"  Width="260" Height="32"/>
+                    <TextBox x:Name="opis" HorizontalAlignment="Left" Margin="350,350,0,0" Text="" VerticalAlignment="Top"  Width="260" Height="32"/>
 
-                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Potvrdi" HorizontalAlignment="Left" Margin="436,421,0,0" VerticalAlignment="Top"/>
+                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Potvrdi" HorizontalAlignment="Left" Margin="436,421,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
                     <Button Background="#FF615F60" Foreground="Black" Content="Ucitaj sliku..." HorizontalAlignment="Left" Margin="908,487,0,0" VerticalAlignment="Top"/>
                     <Image HorizontalAlignment="Left" Height="306" Margin="792,123,0,0" VerticalAlignment="Top" Width="348"/>
 
@@ -54,9 +54,9 @@
                     <TextBlock Foreground="#FF09F909" FontSize="20" HorizontalAlignment="Left" Margin="130,100,0,0" Text="Sta zelite obrisati?" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
                     <TextBlock Foreground="#FF09F909" HorizontalAlignment="Left" Margin="350,100,0,0" Text="Razlog brisanja:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Margin="350,150,0,0" Text="" VerticalAlignment="Top"  Width="260" Height="32"/>
-                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Obrisi" HorizontalAlignment="Left" Margin="430,273,0,0" VerticalAlignment="Top"/>
-                    <ListView Background="White" HorizontalAlignment="Left" Height="290" Margin="730,99,0,0" VerticalAlignment="Top" Width="448"/>
+                    <TextBox x:Name="razlog" HorizontalAlignment="Left" Margin="350,150,0,0" Text="" VerticalAlignment="Top"  Width="260" Height="32"/>
+                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Obrisi" HorizontalAlignment="Left" Margin="430,273,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+                    <ListView x:Name="lista" Background="White" HorizontalAlignment="Left" Height="290" Margin="730,99,0,0" VerticalAlignment="Top" Width="448"/>
 
 
 
@@ -67,28 +67,28 @@
                 <Grid>
                     <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
 
-                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Odobri" HorizontalAlignment="Left" Margin="700,525,0,0" VerticalAlignment="Top"/>
-                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Odbij" HorizontalAlignment="Left" Margin="900,525,0,0" VerticalAlignment="Top"/>
+                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Odobri" HorizontalAlignment="Left" Margin="700,525,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
+                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Odbij" HorizontalAlignment="Left" Margin="900,525,0,0" VerticalAlignment="Top" Click="Button_Click_5"/>
 
-                    <ListView Background="White" HorizontalAlignment="Left" Height="472" Margin="108,85,0,0" VerticalAlignment="Top" Width="448"/>
+                    <ListView x:Name="lista1" Background="White" HorizontalAlignment="Left" Height="472" Margin="108,85,0,0" VerticalAlignment="Top" Width="448"/>
                     <TextBox HorizontalAlignment="Left" Margin="634,85,0,0" Text="" VerticalAlignment="Top" Width="378" Height="400"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Izvjestaji">
                 <Grid>
                     <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
-                    <ListView Background="White" HorizontalAlignment="Left" Height="472" Margin="108,85,0,0" VerticalAlignment="Top" Width="448"/>
+                    <ListView x:Name="lista2" Background="White" HorizontalAlignment="Left" Height="472" Margin="108,85,0,0" VerticalAlignment="Top" Width="448"/>
                     <TextBox HorizontalAlignment="Left" Margin="634,85,0,0" Text="" VerticalAlignment="Top" Width="378" Height="400"/>
-                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Posalji zahtjev za utjerivanje duga" HorizontalAlignment="Left" Margin="700,525,0,0" VerticalAlignment="Top"/>
+                    <Button Background="#FF615F60" Foreground="#FF09F909" Content="Posalji zahtjev za utjerivanje duga" HorizontalAlignment="Left" Margin="700,525,0,0" VerticalAlignment="Top" Click="Button_Click_6"/>
 
 
                 </Grid>
             </PivotItem>
 
             <PivotItem Header="Unosenje i brisanje korisnika">
-                <Grid>
+                <Grid Loaded="Grid_Loaded">
                     <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
-                    <ListView Background="White" HorizontalAlignment="Left" Height="472" Margin="734,35,0,0" VerticalAlignment="Top" Width="448"/>
+                    <ListView x:Name="lista3" Background="White" HorizontalAlignment="Left" Height="472" Margin="734,35,0,0" VerticalAlignment="Top" Width="448"/>
                     <TextBlock Foreground="#FF09F909" FontSize="20" HorizontalAlignment="Left" Margin="50,50,0,0" Text="Ime" TextWrapping="Wrap" VerticalAlignment="Top" />
                     <TextBlock Foreground="#FF09F909" FontSize="20" HorizontalAlignment="Left" Margin="50,100,0,0" Text="Prezime" TextWrapping="Wrap" VerticalAlignment="Top" />
                     <TextBlock Foreground="#FF09F909" FontSize="20" HorizontalAlignment="Left" Margin="50,150,0,0" Text="Adresa stanovanja" TextWrapping="Wrap" VerticalAlignment="Top" />
@@ -106,8 +106,14 @@
                     <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="240,250,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
                     <TextBox x:Name="korisnickoIme" HorizontalAlignment="Left" Margin="240,300,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
                     <TextBox x:Name="lozinka" HorizontalAlignment="Left" Margin="240,350,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="240,400,0,0" VerticalAlignment="Top"  Width="360" Height="32"/>
-
+                    <ComboBox x:Name="funkcija" HorizontalAlignment="Left" Margin="240,400,0,0" VerticalAlignment="Top"  Width="360" Height="32" MaxDropDownHeight="6" IsSynchronizedWithCurrentItem="False">
+                        <ComboBoxItem Content="Haker"/>
+                        <ComboBoxItem Content="Falsifikator"/>
+                        <ComboBoxItem Content="Utjerivac Duga"/>
+                        <ComboBoxItem Content="Dostavljac"/>
+                        <ComboBoxItem Content="Dobavljac"/>
+                        <ComboBoxItem Content="Detektiv"/>
+                    </ComboBox>
                     <Button Background="#FF615F60" Foreground="#FF09F909" Content="Unesi" HorizontalAlignment="Left" Margin="362,465,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
                     <Button Background="#FF615F60" Foreground="#FF09F909" Content="Obrisi" HorizontalAlignment="Left" Margin="928,543,0,0" VerticalAlignment="Top"/>
 

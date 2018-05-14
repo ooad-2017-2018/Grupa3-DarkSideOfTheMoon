@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Azure\mafijasi.cs" />
     <Compile Include="GlobalnaMafija.cs" />
     <Compile Include="Model\Detektiv.cs" />
     <Compile Include="Model\Dobavljac.cs" />
@@ -114,6 +115,14 @@
     <Compile Include="Model\UtjerivacDuga.cs" />
     <Compile Include="Model\Zahtjev.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\DetektivViewModel.cs" />
+    <Compile Include="ViewModel\DobavljacViewModel.cs" />
+    <Compile Include="ViewModel\DostavljacViewModel.cs" />
+    <Compile Include="ViewModel\FalsifikatorViewModel.cs" />
+    <Compile Include="ViewModel\HakerViewModel.cs" />
+    <Compile Include="ViewModel\PrijavaViewModel.cs" />
+    <Compile Include="ViewModel\UpravaViewModel.cs" />
+    <Compile Include="ViewModel\UtjerivacDugaViewModel.cs" />
     <Compile Include="View\FormaDetektiv.xaml.cs" />
     <Compile Include="View\FormaDobavljac.xaml.cs" />
     <Compile Include="View\FormaDostavljac.xaml.cs" />

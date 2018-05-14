@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Dark_Web.View;
 using Windows.UI.Popups;
+using Dark_Web.ViewModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,9 +32,9 @@ namespace Dark_Web.View
         public void pocisti()
         {
             KorisnickoIme.Text = "";
-            Lozinka.Password = ""; 
+            Lozinka.Password = "";
         }
-     
+
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             if(KorisnickoIme.Text == "" || Lozinka.Password.ToString() == "")

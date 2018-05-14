@@ -7,9 +7,10 @@ using Windows.UI.Xaml.Controls;
 
 namespace Dark_Web
 {
+    public enum VrstaRobe { Dijamant, Slika, Antikvitet, Nakit };
+
     public class Roba
     {
-        public enum VrstaRobe { Dijamant, Slika, Antikvitet, Nakit}; 
         VrstaRobe vrsta;
         double cijena;
         string naziv, opis;

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,10 +27,18 @@ namespace Dark_Web.View
         {
             this.InitializeComponent();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Prijava)); 
+            this.Frame.Navigate(typeof(Prijava));
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if(izvjestaj.Text=="" || lista.SelectedItems.Count == 0)
+            {
+                MessageDialog msgDialog = new MessageDialog("Morate odabrati zahtjev i napisati izvjestaj.");
+                msgDialog.ShowAsync();
+            }
         }
     }
 }

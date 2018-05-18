@@ -9,5 +9,7 @@ namespace Dark_Web
     public static class GlobalnaMafija
     {
         public static Mafija mafija = new Mafija();
+        
+        
     }
 }

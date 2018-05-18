@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image Source="Assets/Pozadina4.jpg" Stretch="Fill" Margin="0,0,-5,0"/>
+        <Image Source="../Assets/Pozadina4.jpg" Stretch="Fill" Margin="0,0,-5,0"/>
         <ListView x:Name="lista" Background="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="264" VerticalAlignment="Top" Width="472" Margin="112,100,0,0"/>
         <Button  Foreground = "#FF09F909"  Background="#FF615F60" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,32,0,0" Click="Button_Click"/>
         <Button  Foreground = "#FF09F909"  Background="#FF615F60" Content="Podnesi zahtjev" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630,200,0,0" Click="Button_Click_2"/>

@@ -81,6 +81,24 @@ namespace Dark_Web
         /// </summary>
         public App()
         {
+           // Hardkodiran izvjestaji
+           //Hakiranje
+            Izvjestaj noviIzvjestaj = new Izvjestaj(VrstaIzvjestaja.Hakiranje,"Izvjestaj o hakiranju 1"); 
+            GlobalnaMafija.mafija.listaIzvjestaja.Add(noviIzvjestaj);
+            Izvjestaj noviIzvjestaj1 = new Izvjestaj(VrstaIzvjestaja.Hakiranje, "Izvjestaj o hakiranju 2");
+            GlobalnaMafija.mafija.listaIzvjestaja.Add(noviIzvjestaj1);
+            //Pracenje
+            Izvjestaj noviIzvjestaj2 = new Izvjestaj(VrstaIzvjestaja.Pracenje, "Izvjestaj o pracenju 1");
+            GlobalnaMafija.mafija.listaIzvjestaja.Add(noviIzvjestaj2);
+            Izvjestaj noviIzvjestaj3 = new Izvjestaj(VrstaIzvjestaja.Pracenje, "Izvjestaj o pracenju 2");
+            GlobalnaMafija.mafija.listaIzvjestaja.Add(noviIzvjestaj3);
+            //Utjerivanje duga
+            Izvjestaj noviIzvjestaj4 = new Izvjestaj(VrstaIzvjestaja.Hakiranje, "Izvjestaj o utjerivanju duga 1");
+            GlobalnaMafija.mafija.listaIzvjestaja.Add(noviIzvjestaj4);
+            Izvjestaj noviIzvjestaj5 = new Izvjestaj(VrstaIzvjestaja.Hakiranje, "Izvjestaj o utjerivanju duga 2");
+            GlobalnaMafija.mafija.listaIzvjestaja.Add(noviIzvjestaj5);
+
+
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }

@@ -40,5 +40,10 @@ namespace Dark_Web.View
                 msgDialog.ShowAsync();
             }
         }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+           
+        }
     }
 }

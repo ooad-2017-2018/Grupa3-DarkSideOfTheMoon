@@ -20,6 +20,33 @@ namespace Dark_Web
             vrstaIzvjestaja = vrsta; 
             opisIzvjestaja = ostaleInfo; 
         }
+        public override string ToString()
+        {
+            string izlaz = ""; 
+            if(vrstaIzvjestaja == VrstaIzvjestaja.Pracenje)
+            {
+                izlaz += "Praćenje: ";
+            }
+            else if(vrstaIzvjestaja == VrstaIzvjestaja.Hakiranje)
+            {
+                izlaz += "Hakiranje: ";
+            }
+            else if(vrstaIzvjestaja == VrstaIzvjestaja.UtjerivanjeDuga)
+            {
+                izlaz += "Utjerivanje duga: "; 
+            }
+            else if(vrstaIzvjestaja == VrstaIzvjestaja.NaplataGotovinom)
+            {
+                izlaz += "Naplata gotovinom: "; 
+            }
+            else if(vrstaIzvjestaja == VrstaIzvjestaja.NaplataKarticom)
+            {
+                izlaz += "Naplata karticom: "; 
+            }
+            izlaz += opisIzvjestaja; 
+            return izlaz;
+        }
+
     }
     
 }

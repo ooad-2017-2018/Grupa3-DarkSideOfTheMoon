@@ -8,13 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
+        <Image Source="../Assets/Pozadina6.jpg" Stretch="Fill"/>
         <ListView BorderBrush="Black" BorderThickness="2" Background="White" HorizontalAlignment="Left" Height="241" VerticalAlignment="Top" Width="301" Margin="79,122,0,0"/>
         <TextBox HorizontalAlignment="Left" Text="Detalji" VerticalAlignment="Top" Margin="81,384,0,0" Height="269" Width="301"/>
         <Pivot Foreground="#FF09F909" Title="Pivot" Margin="426,66,39,0" Height="693" VerticalAlignment="Top">
             <PivotItem Header="Licna Karta" Margin="12,0,12,70">
                 <Grid>
-                    <Image Source="Assets/LicnaKarta.jpg" Margin="62,0,103,22" Stretch="Fill"/>
+                    <Image Source="../Assets/LicnaKarta.jpg" Margin="62,0,103,22" Stretch="Fill"/>
                     <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Izradi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="179,447,0,0" Height="29" Width="128" Click="Button_Click_2"/>
                     <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Ucitaj sliku..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="659,453,0,0" Height="29" Width="128"/>
                     <TextBox x:Name="ime" HorizontalAlignment="Left" Text="Ime" VerticalAlignment="Top" Margin="150,200,0,0" Width="300"/>
@@ -30,7 +30,7 @@
             </PivotItem>
             <PivotItem Header="Vozacka dozvola">
                 <Grid>
-                    <Image Source="Assets/Vozacka.jpg" Margin="62,0,103,124" Stretch="Fill"/>
+                    <Image Source="../Assets/Vozacka.jpg" Margin="62,0,103,124" Stretch="Fill"/>
                     <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Izradi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="218,494,0,0" Height="29" Width="128" Click="Button_Click_3"/>
                     <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Ucitaj sliku..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="662,498,0,0" Height="29" Width="128"/>
                     <TextBox x:Name="ime2" HorizontalAlignment="Left" Text="Ime" VerticalAlignment="Top" Margin="450,200,0,0" Width="300"/>
@@ -44,7 +44,7 @@
             </PivotItem>
             <PivotItem Header="Pasos">
                 <Grid>
-                    <Image Source="Assets/Pasos.jpg" Margin="62,0,103,136" Stretch="Fill"/>
+                    <Image Source="../Assets/Pasos.jpg" Margin="62,0,103,136" Stretch="Fill"/>
                     <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Izradi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,492,0,0" Height="29" Width="128" Click="Button_Click_4"/>
                     <Button Foreground = "#FF09F909"  Background="#FF615F60" Content="Ucitaj sliku..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="645,495,0,0" Height="29" Width="128"/>
                     <TextBox x:Name="ime3" HorizontalAlignment="Left" Text="Ime" VerticalAlignment="Top" Margin="150,200,0,0" Width="300"/>

@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
+        <Image Source="../Assets/Pozadina6.jpg" Stretch="Fill"/>
         <ListView x:Name="lista" Background="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="162" VerticalAlignment="Top" Width="358" Margin="54,120,0,0"/>
         <TextBox x:Name="detalji" HorizontalAlignment="Left" Text="Detaljan opis" VerticalAlignment="Top" Margin="458,206,0,0" Width="294" Height="256"/>
         <TextBox x:Name="naziv" HorizontalAlignment="Left" Text="Naziv" VerticalAlignment="Top" Margin="468,128,0,0" Width="290"/>

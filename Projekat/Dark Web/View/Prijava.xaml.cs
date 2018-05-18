@@ -64,5 +64,10 @@ namespace Dark_Web.View
                 pocisti(); 
             }
         }
+
+        private void Prijava1_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

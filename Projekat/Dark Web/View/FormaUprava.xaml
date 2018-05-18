@@ -20,7 +20,7 @@
             </PivotItem>
             <PivotItem Header="Unos robe" Foreground="#FF09F909">
                 <Grid>
-                    <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
+                    <Image Source="../Assets/Pozadina6.jpg" Stretch="Fill"/>
                     <RadioButton x:Name="d"  Foreground="#FF09F909" FontSize="20" Content="Dijamant" HorizontalAlignment="Left" Margin="130,150,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
                     <RadioButton x:Name="n" Foreground="#FF09F909" FontSize="20" Content="Nakit" HorizontalAlignment="Left" Margin="130,200,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
                     <RadioButton x:Name="a" Foreground="#FF09F909" FontSize="20" Content="Antikvitet" HorizontalAlignment="Left" Margin="130,250,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
@@ -45,7 +45,7 @@
             </PivotItem>
             <PivotItem Header="Brisnje robe">
                 <Grid>
-                    <Image Source="Assets/Pozadina5.jpg" Stretch="Fill"/>
+                    <Image Source="../Assets/Pozadina5.jpg" Stretch="Fill"/>
 
                     <RadioButton  Foreground="#FF09F909" FontSize="20" Content="Dijamant" HorizontalAlignment="Left" Margin="130,150,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
                     <RadioButton Foreground="#FF09F909" FontSize="20" Content="Nakit" HorizontalAlignment="Left" Margin="130,200,0,0" VerticalAlignment="Top" RequestedTheme="Dark"/>
@@ -65,7 +65,7 @@
             </PivotItem>
             <PivotItem Header="Zahtjevi">
                 <Grid>
-                    <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
+                    <Image Source="../Assets/Pozadina6.jpg" Stretch="Fill"/>
 
                     <Button Background="#FF615F60" Foreground="#FF09F909" Content="Odobri" HorizontalAlignment="Left" Margin="700,525,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
                     <Button Background="#FF615F60" Foreground="#FF09F909" Content="Odbij" HorizontalAlignment="Left" Margin="900,525,0,0" VerticalAlignment="Top" Click="Button_Click_5"/>
@@ -76,7 +76,7 @@
             </PivotItem>
             <PivotItem Header="Izvjestaji">
                 <Grid>
-                    <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
+                    <Image Source="../Assets/Pozadina6.jpg" Stretch="Fill"/>
                     <ListView x:Name="lista2" Background="White" HorizontalAlignment="Left" Height="472" Margin="108,85,0,0" VerticalAlignment="Top" Width="448"/>
                     <TextBox HorizontalAlignment="Left" Margin="634,85,0,0" Text="" VerticalAlignment="Top" Width="378" Height="400"/>
                     <Button Background="#FF615F60" Foreground="#FF09F909" Content="Posalji zahtjev za utjerivanje duga" HorizontalAlignment="Left" Margin="700,525,0,0" VerticalAlignment="Top" Click="Button_Click_6"/>
@@ -87,7 +87,7 @@
 
             <PivotItem Header="Unosenje i brisanje korisnika">
                 <Grid Loaded="Grid_Loaded">
-                    <Image Source="Assets/Pozadina6.jpg" Stretch="Fill"/>
+                    <Image Source="../Assets/Pozadina6.jpg" Stretch="Fill"/>
                     <ListView x:Name="lista3" Background="White" HorizontalAlignment="Left" Height="472" Margin="734,35,0,0" VerticalAlignment="Top" Width="448"/>
                     <TextBlock Foreground="#FF09F909" FontSize="20" HorizontalAlignment="Left" Margin="50,50,0,0" Text="Ime" TextWrapping="Wrap" VerticalAlignment="Top" />
                     <TextBlock Foreground="#FF09F909" FontSize="20" HorizontalAlignment="Left" Margin="50,100,0,0" Text="Prezime" TextWrapping="Wrap" VerticalAlignment="Top" />

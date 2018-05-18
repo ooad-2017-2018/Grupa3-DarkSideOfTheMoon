@@ -7,8 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image Source="Assets/Pozadina1.jpg" Stretch="Fill"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded">
+        <Image Source="../Assets/Pozadina1.jpg" Stretch="Fill"/>
         <ListView x:Name="lista" BorderBrush="Black" BorderThickness="2" Background="White" HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="367" Margin="111,129,0,0"/>
         <Button Background="#FF615F60" Foreground = "#FF09F909" Content="Posalji" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="654,432,0,0" Click="Button_Click_1"/>
         <Button Background="#FF615F60" Foreground = "#FF09F909" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="792,435,0,0" Click="Button_Click"/>

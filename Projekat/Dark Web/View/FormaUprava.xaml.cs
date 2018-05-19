@@ -124,9 +124,9 @@ namespace Dark_Web.View
             }
             else
             {
-                Zahtjev zahtjev = new Zahtjev(VrstaZahtjeva.UnosINaplataRobe, lista.SelectedItem.ToString());
-                GlobalnaMafija.mafija.listaZahtjeva.RemoveAt(lista.SelectedIndex);
-                GlobalnaMafija.mafija.listaZahtjeva.Add(zahtjev);
+                
+                GlobalnaMafija.mafija.listaZahtjevaUnosNove.RemoveAt(lista.SelectedIndex);
+               
             }
             
            
@@ -141,7 +141,7 @@ namespace Dark_Web.View
             }
             else
             {
-                GlobalnaMafija.mafija.listaZahtjeva.RemoveAt(lista.SelectedIndex);
+                
             }
         }
 
@@ -156,11 +156,32 @@ namespace Dark_Web.View
             {
                 string info = lista.SelectedItem.ToString();
                 Zahtjev zahtjev = new Zahtjev(VrstaZahtjeva.UtjerivanjeDuga, info);
-                GlobalnaMafija.mafija.listaIzvjestaja.RemoveAt(lista.SelectedIndex); 
+                GlobalnaMafija.mafija.listaIzvjestajaUtjerivanjeDuga.RemoveAt(lista.SelectedIndex); 
             }
         }
-
         private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+      
+
+        private void uprava_Loaded(object sender, RoutedEventArgs e)
+        {
+            for (int index = 0; index < GlobalnaMafija.mafija.listaZahtjevaUnosNove.Count; index++)
+            {
+               
+                    lista1.Items.Add(GlobalnaMafija.mafija.listaZahtjevaUnosNove[index].ToString());
+                
+            }
+            for (int index = 0; index < GlobalnaMafija.mafija.listaIzvjestajaNaplata.Count; index++)
+            {
+                    lista2.Items.Add(GlobalnaMafija.mafija.listaIzvjestajaNaplata[index].ToString());
+                
+            }
+
+        }
+
+        private void lista2_ItemClick(object sender, ItemClickEventArgs e)
         {
 
         }

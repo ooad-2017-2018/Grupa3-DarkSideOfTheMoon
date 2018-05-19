@@ -23,7 +23,7 @@ namespace Dark_Web
             if (spol == true) ostaleinfo += " Musko";
             else ostaleinfo += " Zensko";
             Zahtjev noviZahtjev = new Zahtjev(VrstaZahtjeva.FalsifikacijaDokumenata, ostaleinfo, slika);
-            GlobalnaMafija.mafija.DodajZahtjev(noviZahtjev); 
+            GlobalnaMafija.mafija.listaZahtjevaFalsifikator.Add(noviZahtjev); 
         }   
         public void ZahtjevZaPrivatnogDetektiva(string ime, string prezime, string adresaStanovanja, string srodstvo, bool zaposlen, string nazivZaposlen, string adresaZaposlen, bool uUdruzenju,  string nazivUdruzenje, string adresaUdruzenje, string ostaleInformacije, Image slika)
         {
@@ -35,7 +35,7 @@ namespace Dark_Web
                 ostaleinfo += nazivUdruzenje + " " + adresaUdruzenje+ " ";
             ostaleinfo += ostaleInformacije; 
             Zahtjev noviZahtjev = new Zahtjev(VrstaZahtjeva.IznajmljivanjeDetektiva, ostaleinfo, slika);
-            GlobalnaMafija.mafija.DodajZahtjev(noviZahtjev); 
+            GlobalnaMafija.mafija.listaZahtjevaPracenje.Add(noviZahtjev); 
         }
         public string ispisiZahtjev(Zahtjev zahtjev)
         {

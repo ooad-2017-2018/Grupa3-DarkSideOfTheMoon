@@ -36,5 +36,15 @@ namespace Dark_Web.View
         {
             this.Frame.Navigate(typeof(Prijava));
         }
+
+        private void utjerivac_Loaded(object sender, RoutedEventArgs e)
+        {
+            for (int index = 0; index < GlobalnaMafija.mafija.listaZahtjevaUtjerivanje.Count; index++)
+            {
+                
+                    lista.Items.Add(GlobalnaMafija.mafija.listaZahtjevaUtjerivanje[index].ToString());
+                
+            }
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace Dark_Web.Model
         }
         public void izradiDokument(Zahtjev zahtjev)
         {
-            GlobalnaMafija.mafija.listaZahtjeva.Remove(zahtjev); 
+            GlobalnaMafija.mafija.listaZahtjevaFalsifikator.Remove(zahtjev); 
         }
     }
 }

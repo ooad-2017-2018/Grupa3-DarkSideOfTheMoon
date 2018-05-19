@@ -7,12 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="detektiv" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="detektiv_Loaded">
         <Image Source="../Assets/Pozadina4.jpg" Stretch="Fill" Margin="0,0,-5,0"/>
-        <ListView x:Name="lista" Background="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="264" VerticalAlignment="Top" Width="472" Margin="112,100,0,0"/>
+        <ListView x:Name="lista" Background="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="264" VerticalAlignment="Top" Width="472" Margin="112,100,0,0" ItemClick="lista_ItemClick"/>
         <Button  Foreground = "#FF09F909"  Background="#FF615F60" Content="Odjavi se" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,32,0,0" Click="Button_Click"/>
         <Button  Foreground = "#FF09F909"  Background="#FF615F60" Content="Podnesi zahtjev" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630,200,0,0" Click="Button_Click_2"/>
-        <TextBox x:Name="izvjestaj" HorizontalAlignment="Left" Margin="114,392,0,0" Text="Napisi izvjestaj o pracenju" VerticalAlignment="Top" Width="462" Height="190" GotFocus="kliknuto"/>
+        <TextBox x:Name="detalji" HorizontalAlignment="Left" Margin="114,400,0,0" Text="" VerticalAlignment="Top" Width="462" Height="190" GotFocus="kliknuto"/>
+
+        <TextBox x:Name="izvjestaj" HorizontalAlignment="Left" Margin="114,600,0,0" Text="Napisi izvjestaj o pracenju" VerticalAlignment="Top" Width="462" Height="190" GotFocus="kliknuto"/>
         <Button  Foreground = "#FF09F909"  Background="#FF615F60" Content="Napisi izvjestaj" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630,520,0,0" Click="Button_Click_1"/>
 
     </Grid>

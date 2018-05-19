@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded">
+    <Grid x:Name="uprava" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="uprava_Loaded">
 
         <Pivot Title="Uprava" Foreground="#FF09F909" Margin="0,30,0,0">
             <PivotItem Header="Mape" Foreground="#FF09F909">
@@ -77,8 +77,8 @@
             <PivotItem Header="Izvjestaji">
                 <Grid>
                     <Image Source="../Assets/Pozadina6.jpg" Stretch="Fill"/>
-                    <ListView x:Name="lista2" Background="White" HorizontalAlignment="Left" Height="472" Margin="108,85,0,0" VerticalAlignment="Top" Width="448"/>
-                    <TextBox HorizontalAlignment="Left" Margin="634,85,0,0" Text="" VerticalAlignment="Top" Width="378" Height="400"/>
+                    <ListView x:Name="lista2" Background="White" HorizontalAlignment="Left" Height="472" Margin="108,85,0,0" VerticalAlignment="Top" Width="448" ItemClick="lista2_ItemClick"/>
+                    <TextBox x:Name="detalji" HorizontalAlignment="Left" Margin="634,85,0,0" Text="" VerticalAlignment="Top" Width="378" Height="400" IsReadOnly="True"/>
                     <Button Background="#FF615F60" Foreground="#FF09F909" Content="Posalji zahtjev za utjerivanje duga" HorizontalAlignment="Left" Margin="700,525,0,0" VerticalAlignment="Top" Click="Button_Click_6"/>
 
 
@@ -106,14 +106,7 @@
                     <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="240,250,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
                     <TextBox x:Name="korisnickoIme" HorizontalAlignment="Left" Margin="240,300,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
                     <TextBox x:Name="lozinka" HorizontalAlignment="Left" Margin="240,350,0,0" Text="" VerticalAlignment="Top" Width="360" Height="32"/>
-                    <ComboBox x:Name="funkcija" HorizontalAlignment="Left" Margin="240,400,0,0" VerticalAlignment="Top"  Width="360" Height="32" MaxDropDownHeight="6" IsSynchronizedWithCurrentItem="False">
-                        <ComboBoxItem Content="Haker"/>
-                        <ComboBoxItem Content="Falsifikator"/>
-                        <ComboBoxItem Content="Utjerivac Duga"/>
-                        <ComboBoxItem Content="Dostavljac"/>
-                        <ComboBoxItem Content="Dobavljac"/>
-                        <ComboBoxItem Content="Detektiv"/>
-                    </ComboBox>
+                    <ComboBox x:Name="funkcija" HorizontalAlignment="Left" Margin="240,400,0,0" VerticalAlignment="Top"  Width="360" Height="32" MaxDropDownHeight="6" IsSynchronizedWithCurrentItem="False"/>
                     <Button Background="#FF615F60" Foreground="#FF09F909" Content="Unesi" HorizontalAlignment="Left" Margin="362,465,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
                     <Button Background="#FF615F60" Foreground="#FF09F909" Content="Obrisi" HorizontalAlignment="Left" Margin="928,543,0,0" VerticalAlignment="Top"/>
 

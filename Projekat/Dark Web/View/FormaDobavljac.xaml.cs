@@ -42,7 +42,7 @@ namespace Dark_Web.View
             }
             else
             {
-                GlobalnaMafija.mafija.listaZahtjeva.RemoveAt(lista.SelectedIndex);
+                
             }
             
         }

@@ -68,5 +68,21 @@ namespace Dark_Web.View
             }
           
         }
+
+        private void detektiv_Loaded(object sender, RoutedEventArgs e)
+        {
+            for(int index = 0; index<GlobalnaMafija.mafija.listaZahtjevaPracenje.Count; index++)
+            {
+                
+                    lista.Items.Add(GlobalnaMafija.mafija.listaZahtjevaPracenje[index].ToString());
+                
+            }
+           
+        }
+
+        private void lista_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            detalji.Text = GlobalnaMafija.mafija.listaZahtjevaPracenje[lista.SelectedIndex].ispisiInfo();
+        }
     }
 }

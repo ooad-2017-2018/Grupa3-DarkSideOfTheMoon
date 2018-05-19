@@ -42,7 +42,7 @@ namespace Dark_Web.View
             }
             else
             {
-                GlobalnaMafija.mafija.listaZahtjeva.RemoveAt(lista.SelectedIndex); 
+               
             }
         }
 
@@ -55,9 +55,7 @@ namespace Dark_Web.View
             }
             else
             {
-                string info = lista.SelectedItem.ToString(); 
-                Izvjestaj novi = new Izvjestaj(VrstaIzvjestaja.NaplataGotovinom, info);
-                GlobalnaMafija.mafija.listaZahtjeva.RemoveAt(lista.SelectedIndex); 
+                
             }
         }
     }

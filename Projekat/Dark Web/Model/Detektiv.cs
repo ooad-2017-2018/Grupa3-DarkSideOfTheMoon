@@ -14,13 +14,13 @@ namespace Dark_Web.Model
         }
         public void zahtjevZaHakiranje(Zahtjev zahtjev)
         {
-            GlobalnaMafija.mafija.DodajZahtjev(zahtjev);
+            GlobalnaMafija.mafija.listaZahtjevaHakiranje.Add(zahtjev); 
         }
         public void napisiIzvjestaj()
         {
             string izvjestaj = "pokupio iz textboxa";
             Izvjestaj noviIzvjestaj = new Izvjestaj(VrstaIzvjestaja.Hakiranje, izvjestaj);
-            GlobalnaMafija.mafija.DodajIzvjestaj(noviIzvjestaj);
+            GlobalnaMafija.mafija.listaIzvjestajaHakiranje.Add(noviIzvjestaj); 
         }
         public string dajIzvjestaj(VrstaIzvjestaja vrsta)
         {

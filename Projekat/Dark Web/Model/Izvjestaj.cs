@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Dark_Web
 {
-    public enum VrstaIzvjestaja { Pracenje, Hakiranje, UtjerivanjeDuga, NaplataKarticom, NaplataGotovinom };
+    public enum VrstaIzvjestaja { Pracenje, Hakiranje, UtjerivanjeDuga, Naplata };
 
     public class Izvjestaj
     {
-        VrstaIzvjestaja vrstaIzvjestaja;
-        string opisIzvjestaja;
+        public VrstaIzvjestaja vrstaIzvjestaja;
+        public string opisIzvjestaja;
 
         public Izvjestaj() { }
 
@@ -25,25 +25,22 @@ namespace Dark_Web
             string izlaz = ""; 
             if(vrstaIzvjestaja == VrstaIzvjestaja.Pracenje)
             {
-                izlaz += "Praćenje: ";
+                izlaz += "Praćenje";
             }
             else if(vrstaIzvjestaja == VrstaIzvjestaja.Hakiranje)
             {
-                izlaz += "Hakiranje: ";
+                izlaz += "Hakiranje";
             }
             else if(vrstaIzvjestaja == VrstaIzvjestaja.UtjerivanjeDuga)
             {
-                izlaz += "Utjerivanje duga: "; 
+                izlaz += "Utjerivanje duga"; 
             }
-            else if(vrstaIzvjestaja == VrstaIzvjestaja.NaplataGotovinom)
+           
+            else if(vrstaIzvjestaja == VrstaIzvjestaja.Naplata)
             {
-                izlaz += "Naplata gotovinom: "; 
+                izlaz += "Naplata"; 
             }
-            else if(vrstaIzvjestaja == VrstaIzvjestaja.NaplataKarticom)
-            {
-                izlaz += "Naplata karticom: "; 
-            }
-            izlaz += opisIzvjestaja; 
+  
             return izlaz;
         }
 

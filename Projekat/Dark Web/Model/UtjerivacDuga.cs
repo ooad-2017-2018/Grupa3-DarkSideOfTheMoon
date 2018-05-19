@@ -14,7 +14,7 @@ namespace Dark_Web.Model
         }
         public void UtjeranDug(Zahtjev zahtjev)
         {
-            GlobalnaMafija.mafija.listaZahtjeva.Remove(zahtjev);  
+            GlobalnaMafija.mafija.listaZahtjevaUtjerivanje.Remove(zahtjev);  
         }
         public void napisiIzvjestaj()
         {

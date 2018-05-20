@@ -68,7 +68,11 @@ namespace Dark_Web
             get;
             set;
         }
-
+        public string funkcija
+        {
+            get;
+            set;
+        }
 
     }
     sealed partial class App : Application

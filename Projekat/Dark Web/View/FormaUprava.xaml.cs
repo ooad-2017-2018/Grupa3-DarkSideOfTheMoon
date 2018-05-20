@@ -1,6 +1,9 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
+﻿using Dark_Web.Azure;
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -58,6 +61,7 @@ namespace Dark_Web.View
                     obj.brojTelefona = pom;
                     obj.korisnickoIme = korisnickoIme.Text;
                     obj.lozinka = lozinka.Text;
+                    obj.funkcija = funkcija.SelectedItem.ToString();
                     userTableObj.InsertAsync(obj);
                     MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog uposlenika.");
                     msgDialog.ShowAsync();
@@ -161,7 +165,51 @@ namespace Dark_Web.View
         }
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                funkcija.Items.Add("Uprava");
+                funkcija.Items.Add("Haker");
+                funkcija.Items.Add("Detektiv");
+                funkcija.Items.Add("Dobavljac");
+                funkcija.Items.Add("Dostavljac");
+                funkcija.Items.Add("Utjerivac dugova");
+                funkcija.Items.Add("Falsifikator");
 
+                string query = "SELECT * FROM mafijasi;";
+                ConnectionStringAzure s = new ConnectionStringAzure();
+                using (SqlConnection c = new SqlConnection(s.konekcija))
+                {
+                    c.Open();
+                    if (c.State == System.Data.ConnectionState.Open)
+                    {
+                        SqlCommand sc = c.CreateCommand();
+                        sc.CommandText = query;
+                        SqlDataReader reader = sc.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            string ime = reader.GetString(5);
+                            //Ime.Text = ime;
+                            string prezime = reader.GetString(6);
+                            string email = reader.GetString(7);
+                            string ad_stanovanja = reader.GetString(8);
+                            /*float br = reader.GetFloat(9);
+                            string kime = reader.GetString(10);
+                            string lozi = reader.GetString(11);
+                            string funk = reader.GetString(12);
+                            string pom = ime + prezime + email + ad_stanovanja + br.ToString() + kime + lozi + funk;*/
+                            string pom = ime + prezime + email + ad_stanovanja;
+                            lista3.Items.Add(pom);
+                        }
+                       
+                    }
+                    c.Close();
+                }
+            }
+            catch (Exception s)
+            {
+                Debug.WriteLine("Exception AgencijaAzure1: " + s.Message);
+
+            }
         }
       
 

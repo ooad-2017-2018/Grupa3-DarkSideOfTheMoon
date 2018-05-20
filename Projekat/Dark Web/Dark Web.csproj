@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Azure\ConnectionStringAzure.cs" />
     <Compile Include="Azure\mafijasi.cs" />
     <Compile Include="GlobalnaMafija.cs" />
     <Compile Include="Model\Detektiv.cs" />

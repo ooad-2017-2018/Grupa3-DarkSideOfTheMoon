@@ -1,0 +1,22 @@
+1.Iterator pattern
+Dati pattern je pattern ponašanja.
+Iterator patern omoguèava sekvencijalni pristup elementima kolekcije bez poznavanja kako je kolekcija strukturirana.
+Ovaj pattern se koristi kada je potrebno imati uniforan naèin pristupa bilo kojoj kolekciji. 
+Ako recimo želimo iz nekog razloga da primimo ArrayList, Array i sl., možemo iskoristiti iterator interface pomocu kojeg æemo najbolje omoguèiti uniforan pristup i 
+napraviti bolji polimorfizam.
+Da li je ovaj patern implementiran u našem projektu? Ne.
+Ovo bi se trebalo implementirati ukoliko postoji više vrsta kolekcija u programu. 
+Mi smo koristili prilikom implementacije samo liste tako da ovaj pattern nije od nekog znaèaja.
+
+2.Observer pattern
+Observer patern uspostavlja relaciju izmeðu objekata tako da kada jedan objekat promijeni stanje, drugi zainteresirani objekti se obavještavaju.
+Da li je ovaj patern implementiran u našem projektu? Ne.
+Ukoliko doðe do zahtjeva za brisanje korisnièkog raèuna od strane klijenta, èlanovi uprave primaju obavijest o tome.
+
+
+3. Decorator(strukturalni pattern)
+Decorator patern služi za dinamièko dodavanje elemenata i funkcionalnosti postojeæim objektima, a da objekat o tome ništa ne zna. 
+Obièno se koristi za implementaciju razlièitih kompresija videa, simultano prevoðenje itd.
+Implementacija ovog paterna podrazumijeva implementaciju klase *Component*, interfejsa *IComponent* te klase *Decorator*.
+Da li je ovaj patern implementiran u našem projektu? Ne.
+Trenutno ne postoji mjesto za upotrebu ovog paterna èija bi implementacija poboljšala kvalitet projekta.

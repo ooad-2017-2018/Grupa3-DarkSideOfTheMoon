@@ -1,0 +1,14 @@
+1. Adapter patern (koji spada u strukturalni patern)
+Objašnjenje: Osnovna namjena adapter paterna je da omoguæi širu upotrebi veæ postojeæih klasa. U situacijama kada je potreban drugaèiji interfejs neke postojeæe klase, a ne želimo mjenjati postojeæu koristimo ovaj patern, tako što kreiramo novu klasu (adapter klasu) koja služi kao posrednik izmeðu originalne klase i željenog interfejsa. 
+Da li je ovaj patern implementiran u našem projektu? Ne.
+Gdje bi se mogao implementirati? Adapter patern u našem projektu bismo mogli implementirati ukoliko želimo da klasa Uprava ima neke druge privilegije u odnosu na one koje trenutno ima, kreirali bismo novu adapter klasu sa željenim privilegijama.
+
+2. Strategy patern (koji spada u paterne ponašanja)
+Objašnjenje: Strategy patern izdvaja algoritam iz matiène klase i ukljuèuje ga u posebne klase. Pogodan je kada postoje razlièiti primjenjivi algoritni (strategije) za neki problem. Omoguæava klijentu izbor jednog od algoritama iz familije algoritama za korištenje. 
+Da li je ovaj patern implementiran u našem projektu? Ne.
+Gdje bi se mogao implementirati? U sluèaju da klijent može birati na koji naèin æe da plaæa (karticom ili gotovinom), tada bi postajala dva algoritma (strategije) za plaæanje robe. 
+
+3. State patern (koji spada u paterne ponašanja)
+State patern je dinamièka verzija Strategy paterna. Objekat mjenja naèin ponašanja na osnovu trenutnog stanja i ovaj patern se postiže promjenim podklase unutar hijerarhije klasa.
+Da li je ovaj patern implementiran u našem projektu? Ne.
+Gdje bi se mogao implementirati? Ukoliko želimo da pratimo stanje klijenta, npr. klijent koji uredno plaæa svu robu koju naruèuje (ima sve privilegije), klijent koji je bio dužnik (ima zabranu kupovine odreðeni vremenski period), klijent koji je trenutno dužan (ne može kupovati ništa više od mafije), klijent koji nikad nije ništa kupio i slièno. 

@@ -1,0 +1,81 @@
+﻿1. Prototype patern
+
+Uloga protoype paterna je kreiranje novih objekata, na nacin da klonira postojeci objekat.
+ 
+Ukoliko je kreiranje novog objekta zahtjevno i predstavlja veliki trosak onda vrsimo kloniranje tog objekta, 
+
+i na taj nacin nam je omoguceno da bez prethodnog poznavanja njegove klasi i nacina na koji je kreiran,
+prilagodimo 
+sebi objekat na nacin na koji nam odgovara.
+
+Postoje dva nacina implementacije ovog paterna, i to povrsinsko i duboko kloniranje.
+
+Povrsinsko kloniranje mozemo izvrsiti koristenjem Object.MemberWiseClone metode, ona klonira objekat tako da
+kopira sva
+ polja i reference objekta i kao povratni tip vraca referencu na taj klonirani objekat, ali ne kopira 
+objekte na
+ koje reference u objektima pokazuju.
+Dubokim kopiranjem ostvarujemo kopiranje i svih podobjekata.
+
+Koristimo ga kada je potrebno da se sakriju konkretne klase od klijenta, dodaju
+ ili izbrišu nove klase za vrijeme
+ izvršavanja, da se broj klasa u sistemu održi na minimumu,
+kada je potrebna promjena strukture podataka za vrijeme
+ izvršavanja ili u svrhu visestrukog koristenja podataka iz baze.
+
+Da li je ovaj patern implementiran u našem projektu? Ne.
+
+Mogao bi se implementirati u nasem projektu u svrhu visestrukog koristenja podataka iz baze podataka, 
+ako zelimo klonirati 
+podatke iz baze, u svrhu nekog istrazivanja.
+
+
+
+2. Factory Method patern
+
+Uloga mu je da omoguci kreiranje objekata tako da podklase odlucuju koju klasu da instanciraju,
+ 
+tako da razlicite podklase mogu na razlicite nacine implementirati interfejs.
+Factory Method instancira odgovarajucu 
+podklasu preko posebne metode na osnovu dobivenih informacija ostrane klijenta ili
+na osnovu tekuceg stanja.
+
+Osnovni elementi ovog paterna su: interfejs za produkte, klase koje implementiraju taj interfejs, klasa koja
+
+posjeduje metodu FactoryMethod() (metodu koja odlucuje koju klasu instancirati).
+
+Da li je ovaj patern implementiran u našem projektu? Na neki nacin i jeste, ali ne bas precizno kao sto je 
+to predstavljeno u predavanju, 
+pa cu ipak opisati u kojem dijelu.
+
+Moguce je iskoristiti ovaj patern prilikom komunikacije dostavljaca i klijenta, 
+nakon sto klijent naruci da kupi 
+neku odredjenu robu, ili da posalje zahtjev za detektiva ili utjerivaca,
+dostavljac ce u svakom slucaju dostaviti paket, 
+a u zavisnosti od zahtjeva paket ce biti odredjenog sadrzaja.
+
+
+
+3.  Interpreter patern
+
+U dobro strukturiranom okruženju cesto dolazi do razlicitih problema,
+ti problemi bi se 
+lako mogli rijesiti ako bi se to okruzenje opisalo nekim jezikom. Tada bi interpreter tog jezika mogao lako da riješi
+ probleme koji se javljaju.Interpreter pattern služi za evaluiranje gramatike nekog jezika i jezickih izraza. 
+
+Implementira se AbstractExpression interface koji koristi kompozitni pattern da bi riješio neki jezicki problem.
+ 
+Obicno se koriste TerminalExpression i CompoundExpression klase koje služe za rekurzivno rješavanje problema 
+interpretacije nekog jezickog 
+izraza gdje je CompoundExpression neki dio pravila koji poziva drugo pravilo za obradu
+ izraza, dok je TerminalExpression bazni slucaj za 
+neko pravilo.
+
+Da li je ovaj patern implementiran u našem projektu? Ne.
+
+Mozemo ga implementirati da bi provjeravali validnost lozinke prilikom registracije, ili za validnost user name-a,
+ npr. dovoljna duzina, 
+upotreba dozvoljenih znakova, itd.
+
+
+

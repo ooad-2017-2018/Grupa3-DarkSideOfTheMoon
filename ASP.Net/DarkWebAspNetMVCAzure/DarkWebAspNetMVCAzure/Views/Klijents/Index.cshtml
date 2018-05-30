@@ -1,0 +1,69 @@
+﻿@model IEnumerable<DarkWebAspNetMVCAzure.Models.Klijent>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prezime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.adresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.brojTelefona)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.korisnickoIme)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lozinka)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prezime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.adresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.brojTelefona)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.korisnickoIme)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lozinka)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.tajniKod }) |
+            @Html.ActionLink("Details", "Details", new { id=item.tajniKod }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.tajniKod })
+        </td>
+    </tr>
+}
+
+</table>

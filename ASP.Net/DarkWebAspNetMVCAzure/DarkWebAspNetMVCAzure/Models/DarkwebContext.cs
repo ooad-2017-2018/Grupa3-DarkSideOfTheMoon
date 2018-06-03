@@ -14,11 +14,14 @@ namespace DarkWebAspNetMVCAzure.Models
         }
         //dodavanjem klasa iz modela kao DbSet iste će biti mapirane u bazu podataka
         public DbSet<Klijent> Klijent { get; set; }
-        
+        public DbSet<Roba> Roba { get; set; }
+        public DbSet<Zahtjev> Zahtjev { get; set; }
+
         //Ova funkcija se koriste da bi se ukinulo automatsko dodavanje množine u nazive
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-        }
+        }
+
     }
 }

@@ -218,6 +218,8 @@
     <Compile Include="Models\Klijenti.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Osoba.cs" />
+    <Compile Include="Models\Roba.cs" />
+    <Compile Include="Models\Zahtjev.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

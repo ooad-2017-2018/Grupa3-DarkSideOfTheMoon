@@ -12,7 +12,7 @@ using DarkWebAspNetMVCAzure.Models;
 
 namespace DarkWebAspNetMVCAzure.Controllers
 {
-    public class Klijents1Controller : ApiController
+    public class KlijentsApiController : ApiController
     {
         private DarkwebContext db = new DarkwebContext();
 
